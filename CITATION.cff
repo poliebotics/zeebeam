@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the manuscript below; cite the repository release for the artifact."
+title: "ZeeBeam: The Zero-Knowledge Beam"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: Hynes
+    given-names: Cathal Ryan
+    affiliation: PolieBotics
+repository-code: "https://github.com/poliebotics/zeebeam"
+license-url: "https://github.com/poliebotics/zeebeam/blob/main/LICENSE"
+abstract: >-
+  ZeeBeam is the projector-camera capture-and-proof system, and a ZeeBeam recording is a session with rows proved
+  under it; the work belongs to Dark Lantern, the wider privacy and zero-knowledge research programme. This
+  repository holds one ZeeBeam recording. For each of 259 anchored rows of a 712-row session, one SP1 zkVM program wrapped in
+  Groth16 proves that the drand quicknet signatures of the row's round and the preceding round verify, that the
+  BLAKE3 chain state was advanced as specified, that the pattern supplied to the coupling computation derives
+  from that state, that two frozen integer neural networks produced the published outputs on the committed frame,
+  that the row is a leaf of the committed session tree, and that a supplied Zcash v6 transaction, recomputed from
+  raw bytes with its Merkle branch checked to a supplied block header, carries a memo whose decrypted binding equals
+  SHA-256 of a receipt that opens a chameleon commitment over the chain-log prefix containing the row;
+  canonical-mainnet status of that header is an out-of-band check. A
+  second program proves the whole chain log against the beacon. Every raw Groth16 proof is 356 bytes; final-relation
+  row statements are 1,101 bytes, the two previous-revision statements 1,085 bytes and the chain statement 279 bytes,
+  and none contains pixels. The release also holds the manuscript after nineteen referee passes by a second model,
+  two companions, the frozen source with fail-closed build drivers, the standalone verifier and the referee trail.
+keywords:
+  - ZeeBeam
+  - Dark Lantern
+  - zero-knowledge proofs
+  - zkVM
+  - SP1
+  - Groth16
+  - drand
+  - BLAKE3
+  - Zcash
+  - projector-camera capture
+  - capture provenance
+preferred-citation:
+  type: report
+  title: "ZeeBeam: The Zero-Knowledge Beam. A zkVM Proof of a Beacon-Seeded Capture-Log Relation with Learned Scores and a Zcash Receipt"
+  authors:
+    - family-names: Hynes
+      given-names: Cathal Ryan
+      affiliation: PolieBotics
+  year: 2026
+  version: "3.20"
+  url: "https://github.com/poliebotics/zeebeam/blob/main/paper/zeebeam.md"
+  notes: "Manuscript in paper/ of the ZeeBeam repository release 1.0.0; drafted with BOSUN, the project's automated research assistant."

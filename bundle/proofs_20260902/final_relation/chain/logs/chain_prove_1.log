@@ -1,0 +1,62 @@
+Running sp1-gpu-server 6.6.0 with device 0
+mode=ceremony_groth16 prover=local_cuda_explicit sp1_circuit_version=v6.1.0
+guest_elf_bytes=460416 guest_elf_sha256=4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926
+sp1_vkey=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+setup_elapsed_ms=19962
+[sp1] downloaded https://sp1-circuits.s3-us-east-2.amazonaws.com/v6.1.0-groth16.tar.gz to /home/ubuntu/.sp1/circuits/groth16/v6.1.0.incomplete.GZUkxZ
+Setting environment variables took 114.941µs
+Reading R1CS took 23.722268777s
+Reading proving key took 4.412078589s
+Reading witness file took 581.662µs
+Deserializing JSON data took 10.400473ms
+Generating witness took 798.829753ms
+[90m20:58:22[0m DBG constraint system solver done [36mnbConstraints=[0m15972262 [36mtook=[0m4862.921379
+[90m20:58:34[0m DBG prover done [36macceleration=[0mnone [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m15972262 [36mtook=[0m11083.024684
+Generating proof took 15.946247441s
+[90m20:58:34[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m20:58:34[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m20:58:34[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m20:58:34[0m DBG verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m0.815498
+oracle=chain_python checked=279 of 279 circuit_derived=0
+public_values_bytes=279 public_values_sha256=a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8
+prove_elapsed_ms=477730
+verify_and_tamper_elapsed_ms=363
+proof_output=/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_chain_20260902/chain_groth16.bin
+proof_bytes=1973 proof_sha256=3207efa92cf900dd0faf58e7c5dbec12066936055ebb6bc320a6dfa889263679
+verified_proof=true
+
+thread 'main' (48858) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-cuda-6.6.0/src/pk.rs:63:9:
+there is no reactor running, must be called from the context of a Tokio 1.x runtime
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (48858) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-cuda-6.6.0/src/client.rs:221:9:
+there is no reactor running, must be called from the context of a Tokio 1.x runtime
+stack backtrace:
+   0:     0x58863debd261 - <<std[5167731717db2e51]::sys::backtrace::BacktraceLock>::print::DisplayBacktrace as core[8c5ac2f034688f9a]::fmt::Display>::fmt
+   1:     0x58863ded913a - core[8c5ac2f034688f9a]::fmt::write
+   2:     0x58863dec5bdc - <std[5167731717db2e51]::sys::stdio::unix::Stderr as std[5167731717db2e51]::io::Write>::write_fmt
+   3:     0x58863de97486 - std[5167731717db2e51]::panicking::default_hook::{closure#0}
+   4:     0x58863deb3701 - std[5167731717db2e51]::panicking::default_hook
+   5:     0x58863deb3a2b - std[5167731717db2e51]::panicking::panic_with_hook
+   6:     0x58863de97532 - std[5167731717db2e51]::panicking::panic_handler::{closure#0}
+   7:     0x58863de8bcc9 - std[5167731717db2e51]::sys::backtrace::__rust_end_short_backtrace::<std[5167731717db2e51]::panicking::panic_handler::{closure#0}, !>
+   8:     0x58863de9850d - __rustc[4b1ee1ef74718a7b]::rust_begin_unwind
+   9:     0x58863ded991c - core[8c5ac2f034688f9a]::panicking::panic_fmt
+  10:     0x58863ce29452 - tokio[722f130904b3fc3d]::task::spawn::spawn::<<sp1_cuda[df59925fa63b3a67]::client::CudaClientInner as core[8c5ac2f034688f9a]::ops::drop::Drop>::drop::{closure#0}>
+  11:     0x58863ce297c9 - <alloc[93e694a8365d93dd]::sync::Arc<sp1_cuda[df59925fa63b3a67]::client::CudaClientInner>>::drop_slow
+  12:     0x58863c0b4ce9 - zeebeam_chain[de5216c0fff77681]::main
+  13:     0x58863c0e8353 - std[5167731717db2e51]::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14:     0x58863c0f6899 - std[5167731717db2e51]::rt::lang_start::<()>::{closure#0}
+  15:     0x58863deb26c7 - std[5167731717db2e51]::rt::lang_start_internal
+  16:     0x58863c0b8635 - main
+  17:     0x78460d829d90 - __libc_start_call_main
+                               at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  18:     0x78460d829e40 - __libc_start_main_impl
+                               at ./csu/../csu/libc-start.c:392:3
+  19:     0x58863c0a7825 - _start
+  20:                0x0 - <unknown>
+
+thread 'main' (48858) panicked at /rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/panicking.rs:233:5:
+panic in a destructor during cleanup
+thread caused non-unwinding panic. aborting.
+bash: line 1: 48858 Aborted                 ./target/release/zeebeam-chain prove --out /home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_chain_20260902 --prover cuda --expect /home/c/Documents/BOSUN/scratch/joined_build_20260901/chain_expect.json

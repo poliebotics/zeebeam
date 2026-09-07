@@ -1,0 +1,22 @@
+[package]
+name = "zeebeam-row-binding-join-script"
+version = "0.1.0"
+edition = "2021"
+publish = false
+default-run = "zeebeam-row-binding-join-execute"
+autobins = false
+
+[workspace]
+
+[[bin]]
+name = "zeebeam-row-binding-join-execute"
+path = "src/main.rs"
+
+[dependencies]
+sp1-sdk = { version = "=6.4.0", features = ["blocking", "profiling"] }
+zeebeam-row-binding-join = { path = "../join" }
+zeebeam-row-binding-join-native = { path = "../native" }
+
+[build-dependencies]
+sp1-build = { version = "=6.4.0" }
+

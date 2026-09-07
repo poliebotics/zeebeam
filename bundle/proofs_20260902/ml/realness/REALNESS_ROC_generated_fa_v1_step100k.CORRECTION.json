@@ -1,0 +1,11 @@
+{
+ "corrects": "REALNESS_ROC_generated_fa_v1_step100k.json",
+ "original_left_unmodified": true,
+ "correct_reading": {
+  "attack_class": "generated_fa_v1_step100k: frames produced by the published F-A v1 forger (step-100,000 checkpoint) from the real frame two rows earlier; preregistration class 1 (generator-based), not class 2 and not generator-free",
+  "explanation_field": "inherited from the replay/splice harness text; WRONG for this record: this IS a real-vs-generated ROC on held-out sessions, with the stated limits (one forger checkpoint, six real vs six forged per evaluation seed, three evaluation seeds sharing splits)",
+  "forger_seed_field": "100000 is the checkpoint step of the single forger run, not a training seed; the configured seeds 11, 22, 33 were never trained",
+  "bootstrap_interval": "[1.0, 1.0] is degenerate (five perfectly separated observed clusters per class are resampled), not a statement of population uncertainty"
+ },
+ "recorded_by": "BOSUN, 2 September 2026, after referee round 7"
+}

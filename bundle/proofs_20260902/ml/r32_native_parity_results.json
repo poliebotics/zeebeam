@@ -1,0 +1,47 @@
+{
+  "schema": "zeebeam-trained-r32-ptq-v2-native-parity/v1",
+  "recorded_at": "2026-08-23T21:23:41Z",
+  "status": "BIT_EXACT_ALL_144_ARCHITECTURE_SCORES",
+  "source_artifact": {
+    "blob_sha256": "0188b5c0f4ea08e81940aef1a8cb303c00b24e7f8b7730a64bf5080d4030353a",
+    "blob_manifest_file_sha256": "0a2cbe6992e1f1f0911b7ab6e09184bc96408dda0684657ec6c0a21125305290",
+    "blob_manifest_sha256_without_self": "8af5d93232fb9718fca3e50df68c23f65d4d9a1517df8c65031f5c48df5ad04b",
+    "parity_report_file_sha256": "784bd57327fbec4a1ea509025b795c63ca8789bb6d6899fe6a42b831d9cdc347",
+    "parity_report_sha256_without_self": "54b3f2a4d895ba97bd7397f80186698a3aed00b8ff701a179454f39b43976140",
+    "sha256sums_file_sha256": "eb3b85a2cfaa006b0f921f07ff69ca18387a7073ed6559084262e0a69e19dc31"
+  },
+  "fixture": {
+    "file": "fixtures/architecture_r32_parity_v2.bin",
+    "bytes": 976300,
+    "sha256": "7f46d1a239025ec9942fefd75adc07b87aeee92928a0db2c5b1ec949397a8c33",
+    "manifest_file_sha256": "b162fcdcd575979706eae6382e131bbc7dfde475efaa7a0c2d04e63da0929253",
+    "architecture_rows": 72,
+    "matched_scores": 72,
+    "crossed_scores": 72,
+    "verification_rows_loaded": false
+  },
+  "measurement": {
+    "integer_scores_checked": 144,
+    "integer_scores_equal_to_python": 144,
+    "integer_scores_different_from_python": 0,
+    "primary_256_to_r32_first_score_equal": true,
+    "first_score_numerator": 56835791,
+    "native_parity_elapsed_ms": 681,
+    "bit_exact": true
+  },
+  "validation": {
+    "format_command": "cargo +1.97.1 fmt --all -- --check",
+    "format_passed": true,
+    "test_command": "cargo test --release --locked -p zeebeam-trained-r32-ptq-v2-model -p zeebeam-trained-r32-ptq-v2-native -p zeebeam-trained-r32-ptq-v2-relation",
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "parity_command": "cargo run --release --locked -p zeebeam-trained-r32-ptq-v2-native --bin parity -- frozen/r32_fit_calibrated_ptq_v2.bin fixtures/architecture_r32_parity_v2.bin"
+  },
+  "claim_boundary": {
+    "engineering_parity": true,
+    "scientific_threshold_applied": false,
+    "verification_opened": false,
+    "pose_or_reality_claim": false,
+    "proof_generated": false
+  }
+}

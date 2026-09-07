@@ -1,0 +1,12 @@
+20:07:58 STAGE wait_ssh [public address redacted]
+20:08:12 STAGE bootstrap
+20:09:11 STAGE transfer
+20:29:16 STAGE build_cuda
+20:32:18 ELF_REPRODUCED_ON_BOX
+20:32:18 STAGE prove_rows (32 rows)
+rows done: 12
+23:12:52 STAGE pull
+23:12:52 WARNING: pull incomplete
+23:12:52 STAGE shred_and_terminate
+error: HTTP 0: transport: [Errno -3] Temporary failure in name resolution
+23:12:53 FLEET_box4_DONE

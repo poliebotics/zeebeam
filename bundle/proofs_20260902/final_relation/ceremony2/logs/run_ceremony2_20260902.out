@@ -1,0 +1,44 @@
+15:59:37 STAGE wait_ssh [public address redacted]
+15:59:40 STAGE bootstrap
+16:00:23 STAGE transfer
+16:02:56 STAGE build_cuda
+16:05:18 STAGE vkey_check
+guest_elf_bytes=1171416 guest_elf_sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+16:05:41 ELF_REPRODUCED_ON_BOX 8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+16:05:41 STAGE prove_row_96
+16:05:49 row 96 first attempt did not verify (gpu-server race or failure); retrying once
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96.log:	Maximum resident set size (kbytes): 334320
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:guest_elf_bytes=1171416 guest_elf_sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:oracle=full_frozen_row96 checked=1101 circuit_derived=0
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:prove_elapsed_ms=857424
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:verified_proof=true
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:40.34
+/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/box_row_96_retry.log:	Maximum resident set size (kbytes): 113760
+16:20:51 STAGE prove_row_72
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+oracle=independent_row_72 checked=1101 circuit_derived=0
+oracle_note=pose verdict 0, head saturation 0, logit sums [6734, -2425, -875, 1520, -6138, -2992, -28597, -11477, -14082, 1516, -11595] match the audited parity vectors
+oracle_note=typed context, typed root and uncropped commitment match row_oracle.py; coupling score numerator 56821525 (denominator 4) is circuit-derived
+prove_elapsed_ms=749813
+verified_proof=true
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:53.12
+	Maximum resident set size (kbytes): 114240
+16:33:46 STAGE pull
+total 48
+drwxrwxr-x 2 c c 4096 Sep  2 17:33 .
+drwx------ 3 c c 4096 Sep  2 17:33 ..
+-rw------- 1 c c 2795 Sep  2 17:33 row_072_groth16.bin
+-rw-rw-r-- 1 c c 3692 Sep  2 17:33 row_072_manifest.json
+-rw-rw-r-- 1 c c 2203 Sep  2 17:33 row_072_public_values.hex
+-rw------- 1 c c 2795 Sep  2 17:20 row_096_groth16.bin
+-rw-rw-r-- 1 c c 3377 Sep  2 17:20 row_096_manifest.json
+-rw-rw-r-- 1 c c 2203 Sep  2 17:20 row_096_public_values.hex
+-rw-rw-r-- 1 c c 3902 Sep  2 17:33 row_72_stderr.log
+-rw-rw-r-- 1 c c 2336 Sep  2 17:33 row_72_stdout.log
+-rw-rw-r-- 1 c c 4056 Sep  2 17:20 row_96_stderr.log
+-rw-rw-r-- 1 c c 2012 Sep  2 17:20 row_96_stdout.log
+16:33:50 STAGE shred_and_terminate
+terminated [provider identifier redacted] (API reports terminated)
+16:36:09 CEREMONY2_DONE

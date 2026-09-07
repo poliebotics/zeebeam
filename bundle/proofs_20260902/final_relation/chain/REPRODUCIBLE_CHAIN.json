@@ -1,0 +1,70 @@
+{
+ "relation": "whole-session chain (ZBCHAIN1)",
+ "crate": "rust/zeebeam_chain_sp1_candidate",
+ "guest_elf_bytes": 460416,
+ "guest_elf_sha256": "4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926",
+ "sp1_vkey": "0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50",
+ "home_paths_in_elf": 0,
+ "build": "sp1-build --locked with --remap-path-prefix (script/build.rs), halo, 2 Sep 2026 19:4x UTC",
+ "execution_halo": {
+  "total_instruction_count": 368844955,
+  "total_syscall_count": 8906832,
+  "host_elapsed_ms": 64121,
+  "oracle": "chain_python checked=279 of 279 circuit_derived=0",
+  "regions": {
+   "chain_beacons": 324030042,
+   "chain_tree": 17531498,
+   "chain_parse": 11515248,
+   "chain_log_blake3": 9585012,
+   "chain_advances": 6010294,
+   "public_commitment": 16948,
+   "chain_input": 701
+  }
+ },
+ "statement": {
+  "bytes": 279,
+  "fields": "ZBCHAIN1 | row_count 712 | depth 10 | distinct_rounds 66 | first_round 31521605 | last_round 31521705 | s_0 | s_n | chain_log_blake3 754e5716... | manifest 740d752d... | context f5eba65f... | root 38a484b8... | session id"
+ },
+ "status": "PROVED on fleet box0 (Lambda gpu_1x_a100_sxm4, 2 Sep 2026 20:50-20:58 UTC); box rebuilt the chain guest and reproduced ELF 4934b9e2... and vkey 0x005402a8... byte for byte; cold-verified on halo with the SDK (embedded ELF identical) and by standalone sp1-verifier 6.4.0 (tamper controls reject)",
+ "proof": {
+  "prover": "local_cuda_explicit",
+  "sp1_version": "v6.1.0",
+  "guest_elf_sha256": "4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926",
+  "sp1_vkey": "0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50",
+  "setup_elapsed_ms": 19962,
+  "prove_elapsed_ms": 477730,
+  "verify_and_tamper_elapsed_ms": 363,
+  "proof_bytes": 1973,
+  "proof_sha256": "3207efa92cf900dd0faf58e7c5dbec12066936055ebb6bc320a6dfa889263679",
+  "public_values_bytes": 279,
+  "public_values_sha256": "a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8",
+  "oracle_bytes_checked": 279,
+  "oracle_bytes_circuit_derived": 0,
+  "tamper_controls": [
+   "public byte 87 flipped: REJECT",
+   "groth16 proof nibble 96 flipped: REJECT",
+   "wrong verification key: REJECT"
+  ],
+  "raw_groth16_proof_bytes": 356,
+  "raw_groth16_proof_sha256": "68cab3a0e279b7cee30493015cb4069e89babed5dc2bc5879b0534dc2ac0775e",
+  "public_values_sha256_check": "a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8",
+  "host_crate_note": "the chain host crate resolved its own fresh Cargo.lock: sp1-sdk =6.4.0 with sp1-cuda 6.6.0 / sp1-recursion-machine 6.6.0 as transitive versions (see source/rust/zeebeam_chain_sp1_candidate/script/Cargo.lock); the guest uses sp1-zkvm =6.4.0; proof circuit version v6.1.0; the same post-verification sp1-cuda destructor panic as ceremony 2 occurred after the proof and manifest were written"
+ },
+ "decoded_statement": {
+  "authority_manifest_sha256": "740d752d27b70cb63c9501a470562a52616f4a445a7a9c0fb300844f61c7d783",
+  "chain_log_blake3": "754e5716e65a065e5ad3146131609a1fd12e8310d966fb6bf2d3de6c568e7f8b",
+  "context_digest_blake3": "f5eba65f4a3604bee08207b4af571b97813cbd4dd3f919c110f6c5125ab21ee0",
+  "distinct_rounds": 66,
+  "first_round": 31521605,
+  "last_round": 31521705,
+  "magic": "ZBCHAIN1",
+  "ordered_session_root_blake3": "38a484b8793f3afadaf8fc5ba1c04d47e08cdbb4c07a39da09fb4149499a6572",
+  "row_count": 712,
+  "s_0": "74e3a131e1aaadd98e18c5f2a5f28ffaf59b8cd738e10216586efa2a893f384c",
+  "s_n": "aeea9f4d6a55ebecd900eae187ea70dce05696551f96ae976c9a5243b3a4398e",
+  "session_id": "ZEEBEAM_MAINNET_BLOCKING_TRAINING_300S_20260822_001",
+  "sha256": "a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8",
+  "total_bytes": 279,
+  "tree_depth": 10
+ }
+}

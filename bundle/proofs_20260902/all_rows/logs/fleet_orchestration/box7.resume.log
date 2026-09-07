@@ -1,0 +1,9 @@
+23:58:09 RESUME box7 [public address redacted] rows=32
+started
+23:58:14 STAGE prove_rows_detached
+04:18:11 rows done: 20 already: 12 failed: 0
+04:18:11 STAGE pull
+04:18:14 pulled proofs: 32
+04:18:14 STAGE shred_and_terminate
+terminated [provider identifier redacted] (API reports terminated)
+04:21:31 RESUME_box7_DONE

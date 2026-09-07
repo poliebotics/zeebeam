@@ -1,0 +1,21 @@
+{
+ "n": 257,
+ "prove_min_ms": 727794,
+ "prove_median_ms": 755566,
+ "prove_max_ms": 955698,
+ "prove_total_h": 54.62,
+ "setup_median_ms": 22710,
+ "verify_tamper_median_ms": 365,
+ "rss_min_kib": 113520,
+ "rss_max_kib": 341520,
+ "framed_bytes": [
+  2791,
+  2792,
+  2793,
+  2794,
+  2795
+ ],
+ "raw_bytes": [
+  356
+ ]
+}

@@ -1,0 +1,7 @@
+680382144efbae102ac68ca66e20a760e238e304f717ebf04af35a5f4db4add3  ./program/Cargo.lock
+fa885a7d77a05b48461a306af875028ea75c488c0192fb68f80edb730e6617d9  ./program/Cargo.toml
+315cc25b8294fa9025f41c0534a671d4f0dd540459ff7a1940cc3f0486d4771b  ./program/src/main.rs
+10459e91a59ede06e17efabc7fc4e253d97cbb1193dfbf91fa135669782b4426  ./script/build.rs
+4b5ba4d36c39d817bdce9f68a575aa05156aa67c0b5fdf7479deba7859108a71  ./script/Cargo.lock
+ef6cff9d4967bbbea52846d208fdcb383547db335efcbfd16c73f81f573d90b8  ./script/Cargo.toml
+f363a28da846bb8a760ca5cf518773a8b1f99f6fc93e9319bd9bba60cbcf1258  ./script/src/main.rs

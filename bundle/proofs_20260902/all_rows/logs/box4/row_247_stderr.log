@@ -1,0 +1,36 @@
+Running sp1-gpu-server 6.4.0 with device 0
+
+thread 'main' (40009) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-cuda-6.4.0/src/pk.rs:63:9:
+there is no reactor running, must be called from the context of a Tokio 1.x runtime
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (40009) panicked at /home/ubuntu/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-cuda-6.4.0/src/client.rs:221:9:
+there is no reactor running, must be called from the context of a Tokio 1.x runtime
+stack backtrace:
+   0:     0x5f54eaf46381 - <<std[5167731717db2e51]::sys::backtrace::BacktraceLock>::print::DisplayBacktrace as core[8c5ac2f034688f9a]::fmt::Display>::fmt
+   1:     0x5f54eaf6225a - core[8c5ac2f034688f9a]::fmt::write
+   2:     0x5f54eaf4ecfc - <std[5167731717db2e51]::sys::stdio::unix::Stderr as std[5167731717db2e51]::io::Write>::write_fmt
+   3:     0x5f54eaf204d6 - std[5167731717db2e51]::panicking::default_hook::{closure#0}
+   4:     0x5f54eaf3c821 - std[5167731717db2e51]::panicking::default_hook
+   5:     0x5f54eaf3cb4b - std[5167731717db2e51]::panicking::panic_with_hook
+   6:     0x5f54eaf20582 - std[5167731717db2e51]::panicking::panic_handler::{closure#0}
+   7:     0x5f54eaf14d19 - std[5167731717db2e51]::sys::backtrace::__rust_end_short_backtrace::<std[5167731717db2e51]::panicking::panic_handler::{closure#0}, !>
+   8:     0x5f54eaf2155d - __rustc[4b1ee1ef74718a7b]::rust_begin_unwind
+   9:     0x5f54eaf62a3c - core[8c5ac2f034688f9a]::panicking::panic_fmt
+  10:     0x5f54e9ed6362 - tokio[5c42c242f82622df]::task::spawn::spawn::<<sp1_cuda[b30e49432b27df26]::client::CudaClientInner as core[8c5ac2f034688f9a]::ops::drop::Drop>::drop::{closure#0}>
+  11:     0x5f54e9ed66d9 - <alloc[93e694a8365d93dd]::sync::Arc<sp1_cuda[b30e49432b27df26]::client::CudaClientInner>>::drop_slow
+  12:     0x5f54e91a0543 - zeebeam_row_binding_membership_ceremony[52db13afadcc5d1b]::main
+  13:     0x5f54e91bf433 - std[5167731717db2e51]::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14:     0x5f54e91bd5c9 - std[5167731717db2e51]::rt::lang_start::<()>::{closure#0}
+  15:     0x5f54eaf3b7e7 - std[5167731717db2e51]::rt::lang_start_internal
+  16:     0x5f54e91a2535 - main
+  17:     0x73b4f2c29d90 - __libc_start_call_main
+                               at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  18:     0x73b4f2c29e40 - __libc_start_main_impl
+                               at ./csu/../csu/libc-start.c:392:3
+  19:     0x5f54e9193165 - _start
+  20:                0x0 - <unknown>
+
+thread 'main' (40009) panicked at /rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/panicking.rs:233:5:
+panic in a destructor during cleanup
+thread caused non-unwinding panic. aborting.

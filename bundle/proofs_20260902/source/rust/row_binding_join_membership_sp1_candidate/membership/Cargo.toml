@@ -1,0 +1,16 @@
+[package]
+name = "zeebeam-row-binding-membership"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+zeebeam-b3xof-relation = { path = "../../../../scratch/zeebeam_lambda_artifacts_20260824/reviews/post_hold_followup_closure_20260825T0446Z/b3xof_experiment_snapshot/source/sp1/relation" }
+zeebeam-row-binding-join = { path = "../../row_binding_join_sp1_candidate/join" }
+sha2 = { version = "=0.10.9", default-features = false }
+blake2b_simd = { version = "1.0", default-features = false }
+blake3 = { version = "=1.8.1", default-features = false, features = ["pure"] }
+ark-bn254 = { version = "0.4", default-features = false, features = ["scalar_field"] }
+ark-ff = { version = "0.4", default-features = false }
+orchard = { version = "=0.15.3", default-features = false }
+zcash_note_encryption = { version = "=0.4.2", default-features = false }

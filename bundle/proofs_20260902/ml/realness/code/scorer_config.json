@@ -1,0 +1,85 @@
+{
+  "schema": "zeebeam-realness-scorer/v1",
+  "frozen_utc": "2026-08-30",
+  "author": "BOSUN (remote, box [public address redacted])",
+  "prereg": "docs/research/zeebeam_realness_study_prereg_20260828.md v1.0",
+  "note": "Frozen BEFORE any negative is scored. This file plus the source hashes in HASHES.sha256 are the discriminator identity. Editing any value invalidates the freeze; re-hash and re-date if you must.",
+
+  "backbone": {
+    "role": "neural-physical scorer for feature (1) optical/sensor consistency",
+    "checkpoint": "/lambda/nfs/ZeeBeam/pinned/arm_a_eb72_step16000_reference_crossing/step_00016000.pt",
+    "checkpoint_sha256": "d074775e2d9952d34c16baec134ddeff18df9ebf41170aa4c0f49e50c9c52532",
+    "checkpoint_step": 16000,
+    "model_source": "phase_g/diffusion_diagnostic_model.py (frozen v1_1, READ-ONLY)",
+    "loaders": "train_arm_a_ft.py (frozen v1_1, READ-ONLY): load_C, load_E, SESSIONS, preprocessing"
+  },
+
+  "arm_scoring": {
+    "t": 150,
+    "K": 1,
+    "offsets": [-2, 2, -15, 15, 30],
+    "boundary_policy": "an offset leaving [0, rows_total) is ABSENT for that row and never imputed (matches published_protocol_eval)",
+    "noise_policy": "per PRESENTED frame: a torch generator seeded with a deterministic mix of (eval_seed, session, present_row); the same noise is reused across the correct and all wrong-offset conditions for that presented frame. This keys noise to frame IDENTITY (not stream position) so that reordered/spliced sequences remain comparable to genuine ones. It is a valid reproducible instance of the published t=150/K=1/eps-MSE protocol; realised values differ from published_protocol_eval (which draws in row order), the protocol does not.",
+    "score": "eps-MSE = mean((model(q_sample(C,t,noise), E, t) - noise)^2), bf16 autocast, model never denoises"
+  },
+
+  "features": {
+    "f1_consistency": {
+      "declared": "(1) optical/sensor consistency of the frame under its declared emission E_t",
+      "per_frame": "margin_t = mean_over_available_offsets(wrong_mse) - correct_mse  (equivalently: consistency:=-correct_mse, wrong_arm_mean:=-mean(wrong_mse), margin=consistency-wrong_arm_mean). This is the published delta_wrong_mean per row.",
+      "pooled": "median_t(margin_t)  == the declared sequence-level pooling"
+    },
+    "f2_temporal": {
+      "declared": "(2) frame-to-frame temporal coherence of that consistency along the chain",
+      "per_adjacent": "d_t = -abs(margin_t - margin_{t-1}) over consecutive PRESENTED rows",
+      "pooled": "median_t(d_t); a length-1 sequence yields 0.0 by declaration",
+      "rationale": "temporal coherence of feature (1) is the frame-to-frame stability of the consistency signal; a temporally-incoherent (spliced) forgery breaks it"
+    },
+    "f3_bank_xcorr": {
+      "declared": "(3) cross-correlation of the frame's neural-physical statistics against a held-out bank of KNOWN-REAL captures",
+      "bank_fit": "over BANK-split real rows (disjoint from calibration and test): mu_B = mean(margin), sigma_B = std(margin, ddof=1, floored at 1e-9)",
+      "per_frame": "s_t = exp(-0.5 * ((margin_t - mu_B)/sigma_B)^2)  in (0,1], Gaussian-kernel match of the frame's consistency statistic to the known-real distribution",
+      "pooled": "median_t(s_t)",
+      "rationale": "for a scalar neural-physical statistic, cross-correlation against a known-real bank is operationally a distributional match; the bank-standardised Gaussian kernel is a bounded, monotone similarity. LIMITATION: distributional match on a low-dimensional statistic, not a full spatial feature-map cross-correlation."
+    }
+  },
+
+  "aggregation": {
+    "primary_sequence_score": "f1 pooled = median_t(margin_t). This is the frozen headline 'one number per sequence' named verbatim in the prereg; ROC, Youden-J threshold, FPR and FNR are computed on THIS.",
+    "auxiliary_combined": {
+      "note": "declared auxiliary combination of the full 3-feature vector; reported, NOT the headline. Standardised by BANK-split statistics only (test never touched).",
+      "standardise": "z_k = (pooled_k - bank_mean_k) / bank_std_k, bank stats over BANK subsequences",
+      "weights": {"w_f1": 1.0, "w_f2": 0.5, "w_f3": 0.5},
+      "combined": "w_f1*z_f1 + w_f2*z_f2 + w_f3*z_f3"
+    }
+  },
+
+  "holdout": {
+    "unit": "whole contiguous subsequence (never single frames)",
+    "subsequence_len": 100,
+    "tail_policy": "a trailing remainder of length >= subsequence_len/2 becomes its own shorter subsequence; a shorter tail is merged into the previous subsequence",
+    "eval_blocks": {
+      "d2": [[1298, 1698], [2796, 3196], [4294, 4694]],
+      "v10": [[1110, 1360], [2345, 2595]]
+    },
+    "split_assignment": "deterministic round-robin of subsequences (in fixed session,block,offset order) across [bank, calib, test]; declared and reproduced by holdout.assign_splits with split_seed",
+    "split_seed": 20260830,
+    "disjointness": "bank/calib/test row sets MUST be pairwise disjoint; verified loudly (raises) before any scoring"
+  },
+
+  "seeds": {
+    "eval_seeds": [20260823, 20260901, 20260902],
+    "forger_seeds": [11, 22, 33]
+  },
+
+  "metrics": {
+    "auroc": "Mann-Whitney on scores (positive=real), average-rank ties",
+    "cluster_bootstrap": {"unit": "eval block (contiguous)", "n_boot": 2000, "alpha": 0.05},
+    "threshold": "Youden-J (max tpr-fpr) on the CALIBRATION split (real vs the same attack class), disjoint from test"
+  },
+
+  "security_diagnostic_labelling": {
+    "rule": "classes 3 (replay/splice) and 4 (white-box) are generator-free and are reported as SECURITY DIAGNOSTICS / attack-success distributions, NEVER as a realness ROC and NEVER pooled into one realness number",
+    "reason": "the auditor was explicit that calling the pooled discrimination of generator-free attacks 'realness' would be misleading; classes 1 and 2 (photorealistic conditional generators) are not built"
+  }
+}

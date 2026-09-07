@@ -1,0 +1,98 @@
+{
+ "predeclaration": "TEMPORAL_SPLIT_PREDECLARATION.md",
+ "chance_fraction": 0.09090909090909091,
+ "results": {
+  "early": {
+   "n_train": 287,
+   "n_eval": 290,
+   "median_gap_rows": 14.0,
+   "crop": {
+    "correct_per_seed": [
+     286,
+     280,
+     287
+    ],
+    "n": 290,
+    "median_frac": 0.9862068965517241
+   },
+   "full": {
+    "correct_per_seed": [
+     262,
+     213,
+     208
+    ],
+    "n": 290,
+    "median_frac": 0.7344827586206897
+   },
+   "perf": {
+    "correct_per_seed": [
+     246,
+     218,
+     231
+    ],
+    "n": 290,
+    "median_frac": 0.7965517241379311
+   },
+   "hole": {
+    "correct_per_seed": [
+     84,
+     93,
+     44
+    ],
+    "n": 290,
+    "median_frac": 0.2896551724137931
+   },
+   "full_shuffled_control": {
+    "correct": 34,
+    "n": 290,
+    "frac": 0.11724137931034483
+   }
+  },
+  "late": {
+   "n_train": 290,
+   "n_eval": 287,
+   "median_gap_rows": 14,
+   "crop": {
+    "correct_per_seed": [
+     252,
+     256,
+     246
+    ],
+    "n": 287,
+    "median_frac": 0.8780487804878049
+   },
+   "full": {
+    "correct_per_seed": [
+     143,
+     154,
+     187
+    ],
+    "n": 287,
+    "median_frac": 0.5365853658536586
+   },
+   "perf": {
+    "correct_per_seed": [
+     205,
+     193,
+     220
+    ],
+    "n": 287,
+    "median_frac": 0.7142857142857143
+   },
+   "hole": {
+    "correct_per_seed": [
+     43,
+     43,
+     43
+    ],
+    "n": 287,
+    "median_frac": 0.14982578397212543
+   },
+   "full_shuffled_control": {
+    "correct": 43,
+    "n": 287,
+    "frac": 0.14982578397212543
+   }
+  }
+ }
+}

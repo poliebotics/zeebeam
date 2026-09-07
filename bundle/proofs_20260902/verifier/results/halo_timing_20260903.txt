@@ -1,0 +1,29 @@
+# Standalone verifier timing on the development machine (halo: AMD Ryzen AI MAX+ PRO 395, Ubuntu 26.04), 3 September 2026.
+# Binary: verifier/standalone_verifier built --release --locked (sp1-verifier 6.4.0 + sha2 0.10 as direct dependencies).
+# One invocation verifies the proof, then flips one statement byte and expects rejection, then tries a wrong vkey and expects rejection.
+binary_bytes=917512
+locked_packages=209
+$ zeebeam-standalone-verifier all_rows/proofs/row_130_groth16_proof.bin all_rows/proofs/row_130_groth16_public_values.bin 0x0019d16c…0490
+proof_bytes=356 proof_sha256=54be875d9cc9079555fed999e0407d3a9b8d39a2b976e4d00e7f1b839820134d
+public_values_bytes=1101 public_values_sha256=44c65e0b1966cda83f7ff48929877f210107c25e3fa06cb54db10436da73e6ee
+sp1_vkey_hash=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+tamper_public_byte_87_rejected=true
+wrong_vkey_rejected=true
+VERIFIED
+exit=0 wall_seconds=1.64 max_rss_kib=2256
+$ zeebeam-standalone-verifier all_rows/proofs/row_200_groth16_proof.bin all_rows/proofs/row_200_groth16_public_values.bin 0x0019d16c…0490
+proof_bytes=356 proof_sha256=d71dbce2e1def1a17a137f97e014e2d1979289a72c47d182b849c2df63bda473
+public_values_bytes=1101 public_values_sha256=777f63b8c76c0a6fe0fe90ee9b370e55ccc34096f8eaf53b9a451215046cadb2
+sp1_vkey_hash=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+tamper_public_byte_87_rejected=true
+wrong_vkey_rejected=true
+VERIFIED
+exit=0 wall_seconds=1.64 max_rss_kib=2288
+$ zeebeam-standalone-verifier final_relation/chain/chain_groth16_proof.bin final_relation/chain/chain_groth16_public_values.bin 0x005402a8…df50
+proof_bytes=356 proof_sha256=68cab3a0e279b7cee30493015cb4069e89babed5dc2bc5879b0534dc2ac0775e
+public_values_bytes=279 public_values_sha256=a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8
+sp1_vkey_hash=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+tamper_public_byte_87_rejected=true
+wrong_vkey_rejected=true
+VERIFIED
+exit=0 wall_seconds=1.64 max_rss_kib=2288

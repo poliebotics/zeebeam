@@ -1,0 +1,258 @@
+---
+version: 1.18
+date: 2026-09-06
+status: companion-seventh-closing-pass-applied
+author: BOSUN (drafting); Cathal Ryan Hynes (principal)
+companion_to: ZeeBeam manuscript v3.20 (paper/zeebeam.md); ZeeBeam, by Example v1.16 (companions/zeebeam_worked_examples.md)
+---
+
+# ZeeBeam, without the maths
+
+## What was proved about 259 frames of one recording, and what was not
+
+This is the plain-language companion to the manuscript *ZeeBeam*. ZeeBeam names the rig, the protocol and the
+proving pipeline, and a ZeeBeam recording is a session with rows proved under them; the work belongs to Dark Lantern,
+the wider privacy and zero-knowledge research programme.
+It has no formulas. It does
+have exact claims, because the whole point of the work is to say precisely what was proved and to stop
+there. Where a sentence below sounds cautious, that is the manuscript's caution, not mine.
+
+A few words are used the way the manuscript uses them. A **frame** is one camera capture as a block of
+bytes; the proofs work on those bytes and, as Section 6 explains, do not by themselves establish that
+a camera produced them. A **row** is one frame together with the bookkeeping recorded around it; the
+session has 712 rows. A **round** is one numbered publication of the drand random beacon. A **leg** is
+one of the checks the proof performs.
+
+---
+
+### 1. A proof you can check without seeing the evidence
+
+Imagine a friend claims to have solved today's crossword. You could ask to see the grid, but then you
+would see the answers. A zero-knowledge proof is a way for your friend to establish a precisely
+written claim, "this grid, whose shape you can see, is correctly filled", without showing you the
+filled squares. Not "trust me": a check you run yourself, on a small piece of paper, that a correct
+proof passes and a forged one fails except by a chance too small to matter.
+
+In the interactive form, the checker calls out random challenges and only someone holding the solution
+can answer every one; repeating the challenges shrinks a guesser's chance further. The proofs in this
+work are the non-interactive form: a file, checked together with its public statement and a pinned
+identifier of the program that produced it. The manuscript keeps a small named allowance for the
+chance a forged file passes, and builds nothing on top of it that the allowance does not support.
+
+Three words to keep. **Statement:** the public claim, written down, here exactly 1,101 bytes.
+**Witness:** the private evidence behind the claim, which is not handed over. **Verifier:** anyone
+with a small program, the statement and the pinned program identifier, who can check the proof.
+
+One precise point about privacy, because the manuscript is precise about it. Its theorem says what an
+accepted proof establishes. It separately records that the 1,101-byte statement contains no pixels of
+the frame. It does not prove a separate theorem that the proof file itself leaks nothing, so this
+document does not claim one either. What you are handed is a statement with no picture in it, and a
+proof that the checks passed.
+
+### 2. Fingerprints
+
+Everything in this story is handled by its fingerprint. A cryptographic hash turns any file, a word or a
+24-megabyte frame, into a fixed 32-byte fingerprint. Change one letter of the file and the fingerprint
+changes completely. Nobody knows how to make two different files with the same fingerprint; the
+manuscript states that as an assumption and builds on it.
+
+A fingerprint is a tamper-evident claim ticket rather than a sealed envelope. It pins the file: publish
+the fingerprint and you cannot later swap the file without being caught. It does not by itself hide a
+file that someone could guess, because anyone can take a guess and compute its fingerprint. Byte length alone does
+not make a frame unguessable, and a fingerprint gives no hiding guarantee; here it stands in for the frame only as a
+binding identifier under the manuscript's collision-resistance assumption. The proof
+never says "this frame". It says "the frame whose fingerprint is the one in the chain", and the
+statement it publishes has no pixels in it.
+
+### 3. Proving a computer did its sums
+
+Here is the step that makes the rest possible. Instead of designing a bespoke proof for each kind of
+claim, you write an ordinary computer program that performs the checks you care about, and a special
+prover runs it and produces a proof that says: "this exact program, run on some private input, produced
+exactly these public bytes." The program is identified by a 32-byte value derived from its compiled
+form, its verification key. A verifier who pins that key, and who trusts the channel it came through
+and its connection to the audited source code, has pinned the checks.
+
+Two facts about that, from the manuscript. First, the key is unforgivingly exact. In one recorded test
+the authors replaced a three-line comment in the source with five lines, changing no code; the compiled
+program changed, because the compiler bakes line numbers into it for its error messages, and so did the
+key. Putting the comment back restored both. The source was therefore frozen byte for byte and rebuilt
+on other machines to confirm the same key came out. Second, the economics are lopsided in the right
+direction. Proving one frame took about twelve and a half minutes on a rented graphics card, roughly
+forty cents for the proving step itself. The proof is 356 bytes, shorter than this paragraph. Checking
+it on the authors' laptop, including two deliberate failure tests, took under two seconds, a figure the
+bundle records.
+
+### 4. The session, in one story
+
+What follows is the intended protocol and the operator's own record of it. The proofs establish that
+the record is internally consistent and that fixed programs were run on it; they do not by themselves
+authenticate when or how the frames were acquired. That distinction is the subject of Section 6.
+
+The operator's record says that on 22 August 2026, for 301 seconds, a projector lit a scene with a changing pattern and an industrial
+camera recorded it, 712 frames in all, about 2.4 a second. Here is what the record says happened
+around each one.
+
+**The beacon.** A public service called drand publishes, every three seconds, a signed random value for
+a numbered round, signed by a group of independent operators. The manuscript assumes the group releases
+no signature before its scheduled time; before release the value is out of anyone's computational
+reach, though the signing key determines it at all times. The rig recorded a beacon round at each row.
+The record shows it was often a few seconds behind the newest one, and the proofs say nothing about
+which round the rig chose to read.
+
+**The chain.** The rig keeps a running state, a fingerprint that is updated at every row by folding in
+the previous state, the fingerprint of the new frame, a little capture metadata, the round number and
+the beacon value. Each state depends on everything before it: altering an earlier frame's bytes, short
+of finding a fingerprint collision, changes every state after it.
+
+**The pattern.** The pattern the projector is meant to show at row t is computed from the state at row
+t by a fixed recipe. That state was formed at the previous row from the previous round's beacon value.
+So the pattern is a fixed function of a value that was out of reach until that round's release, provided the
+previous row's record was fixed beforehand and under a premise the manuscript states but has not proved (A8). The
+proof checks the supplied round and signature; it does not establish when the previous record was fixed or when the
+frame was acquired.
+
+**The frame.** In the intended protocol, the camera records while that pattern is displayed. Its
+fingerprint goes into the next state.
+
+**Two scorers.** Two small neural networks were trained on rows from this same recording and frozen
+before any proving. One produces a number for how well the frame's window matches the pattern's window.
+The other assigns one of eleven pose labels. Their outputs are numbers the proof publishes; what those
+numbers mean is a separate question, taken up in Section 6.
+
+**The register.** All 712 rows are filed in a tree of fingerprints whose single root stands for the
+whole session.
+
+**The receipt.** Project records place a Zcash transaction minutes after the first 260 rows were recorded; the
+proof does not establish that chronology. Its encrypted memo carries the fingerprint of a receipt, and the receipt can be opened
+to the first 260 rows of the chain.
+
+### 5. What one proof says
+
+For each of rows 1 to 259 (row 0 has no predecessor, so the relation refuses it), there is now a proof.
+Under the manuscript's assumptions and a pinned key, an accepted proof establishes all of the following
+at once for that row, from a statement that contains no pixels:
+
+The beacon signatures for this row's round and the previous row's round are genuine, checked against
+the drand group's public key inside the proof. The chain state was updated exactly by the recipe, twice:
+into this row's state and into the next. The pattern the row is checked against is exactly the one the
+recipe derives from that state. The two frozen scorers, run exactly as pinned, produced exactly the
+published numbers on exactly the frame whose fingerprint sits in the chain. This row is one leaf of the
+session's register, under the published root. The Zcash transaction's identifier, its place in a block
+and that block's header fingerprint were recomputed from the raw bytes, and its memo, decrypted inside
+the proof under the operator's viewing key, carries the fingerprint of a receipt that opens to the
+stretch of the chain containing this very row. The manuscript adds a careful note on the memo: the
+argument that no other key could open it to a different receipt runs through the transaction's own
+note commitment, not through the encryption scheme, which is not assumed to have that property.
+
+Two things the verifier must do themselves, because no proof can: confirm that the header is the real
+Zcash mainnet block 3456294 and that the transaction is in it, and look up the two drand rounds on the
+public schedule.
+
+A second proof covers the operator's chain log as a whole: all 712 recorded state updates, one
+signature check for each of the 66 rounds used (from the first row of each round; later rows' repeated
+copies of the signature are not re-checked, but every row's beacon value is checked against the
+verified one), the rule that rounds never go backwards, and the register rebuilt from scratch to the
+same root the row proofs use. It does not re-hash the frames, and it does not show that the log is a
+true chronology of what happened; it shows that the log is consistent with itself and with the beacon.
+
+Every one of the 259 proofs was checked three ways: the small standalone verifier accepted it; its
+published statement matched, byte for byte, the statement the same program produced when merely run;
+and that run matched numbers computed by a separate route that never touched the proof system. A
+second model refereed the manuscript through nineteen passes; the manuscript says plainly that this is not
+independent validation.
+
+### 6. What it does not say, and why the authors insist on it
+
+This is the part that separates a result from a press release.
+
+**It proves computation, not physics.** The proof establishes that fixed programs produced these
+numbers on these frame bytes. It does not establish that the bytes came from a camera looking at a real
+room. Synthetic bytes would be accepted if they were fed through the whole pipeline from the start
+(what the proof forbids is swapping bytes afterwards under an existing fingerprint); that is the missing premise
+the manuscript calls P1. Whether a high matching score means the recorded light really was the pattern is the
+second premise, P2, and it needs a threshold fixed in advance. Even with both, a camera pointed at a screen or a
+remote scene lit by the current pattern would be accepted: the proof does not authenticate where the scene was.
+
+**The time bound is a floor, with conditions, not a clock.** Because the pattern comes from a beacon
+value out of reach before its release, the pattern could not have been computed before that release,
+provided the previous row's record was fixed beforehand and provided a premise the manuscript states but
+has not proved as a theorem. Under those conditions it is a lower bound on when the pattern could exist,
+and, only with P1 and P2 as well, on when the recorded light existed. It is not a timestamp, not an
+upper bound, and not a statement about where the scene was; a frame recorded after the release can be replayed
+later and nothing here would notice.
+
+**The receipt is a receipt.** After the mainnet check, the Zcash anchor shows that block 3456294 carries the
+transaction whose decrypted memo names the receipt's fingerprint, and that the proof can open the receipt to these
+rows. It does not
+show that the rows existed when the block was mined, because the operator held a mathematical trapdoor
+that lets the receipt be opened to other contents too. The authors say so and say a plainer commitment
+should be used next time.
+
+**The scorers are scorers, not judges.** The pose network agrees with the human cue labels on 101 of 116
+evaluation rows, but each pose occupied one continuous stretch of the single recording, so pose and time
+cannot be told apart on this data; a follow-up test narrowed that problem but did not remove it. The
+matching network has no untouched test set on the development recording. The separate 288-row verification recording was scored once under the preregistered protocol and passed, establishing conditioning separation on that take of the same apparatus, subject and room (Section 8.1). Both networks remain diagnostics; this result adds no claim about physical capture, liveness or adversarial resistance, and the proofs do not cover the verification recording.
+
+**Only rows 1 to 259 are proved.** The receipt covers rows 0 to 259; row 0 is refused because it has no
+predecessor. Rows 260 to 711 lie outside that receipt; their chain steps are covered by the whole-log proof, and full proofs
+of them would need a new receipt on the chain, unless the operator used the trapdoor the manuscript discloses.
+
+### 7. Why bother, then
+
+Because each caveat is now a named, checkable gap rather than a vague doubt. Anyone with the bundle and
+the pinned key can take a 356-byte proof and its 1,101-byte statement and confirm, in about 1.6 seconds on
+a laptop, that a specific frozen program produced these exact numbers on frame bytes committed in a
+beacon-seeded chain whose receipt's fingerprint the decrypted memo of a Zcash transaction names, and then do the two
+public look-ups the proof
+cannot. The manuscript's own list of what comes next: a trusted sensor path or a study of relay and
+injection for P1 and P2; recordings with shuffled poses across several sessions and people; finishing an outstanding attack test; and a plain hash anchor that
+gives an upper bound. None of that is established yet.
+
+### 8. If you want to check it
+
+This public release carries a `LICENSE` (research and private use); no persistent identifier has yet been
+assigned. The bundle contains the proofs, the statements, the frozen source, a verifier that rests on the proof
+system's own verification library, and a guide (`VERIFY.md`) whose first instruction is to check every
+file's fingerprint against the list. It does not contain the frames. Then you build the verifier, run
+it on a proof, watch it reject a deliberately damaged copy, decode the statement, and do the two things
+no proof can do for you: look up the Zcash block on the public chain, and look up the two drand rounds
+and note when they were released.
+
+---
+
+## Log
+
+- 1.18 (2026-09-07, BOSUN): worked examples v1.16; no other change.
+- 1.17 (2026-09-06, BOSUN): manuscript v3.20 (title final); no other change.
+- 1.16 (2026-09-06, BOSUN): manuscript v3.19 (one look recorded); the paragraph on the matching network's test set now reports the one preregistered scoring of the separate verification recording with its boundaries, and the future-work list no longer lists that scoring; no other change.
+- 1.15 (2026-09-06, BOSUN): manuscript v3.16, worked examples v1.15; PDF re-rendered with the long-token fix; the 1.13 entry's manuscript label restored to v3.14 (history). No other change.
+- 1.14 (2026-09-06, BOSUN): manuscript v3.15 (referee trail published again); no other change.
+- 1.13 (2026-09-06, BOSUN): manuscript v3.14, worked examples v1.13; no other change.
+- 1.12 (2026-09-05, BOSUN): manuscript v3.13, worked examples v1.12, nineteen passes; no other change.
+- 1.11 (2026-09-05, BOSUN): manuscript v3.12, worked examples v1.11, eighteen passes; no other change.
+- 1.10 (2026-09-05, BOSUN): manuscript v3.11, worked examples v1.10, seventeen passes; no other change.
+- 1.9 (2026-09-05, BOSUN): status line and companion references (manuscript v3.10, worked examples v1.9) brought into agreement; sixteen passes. No other change.
+- 1.8 (2026-09-05, BOSUN): manuscript v3.9, worked examples v1.8, fifteen passes; no other change.
+- 1.7 (2026-09-05, BOSUN): manuscript v3.8, worked examples v1.7, fourteen passes; no other change.
+- 1.6 (2026-09-05, BOSUN): manuscript v3.7, worked examples v1.6, thirteen passes; no other change.
+- 1.5 (2026-09-05, BOSUN): Sol's verification pass applied: chronology attributed to the operator's record and the
+  project records; the receipt sentence made exact; twelve passes; manuscript v3.6.
+- 1.4 (2026-09-05, BOSUN): Sol's eleventh pass applied: hash hiding and the early-pattern premise stated as the
+  manuscript states them; P1, P2 and relay separated; replay after release not excluded; receipt sentence made exact;
+  rows 260 to 711 with the trapdoor caveat; verification time from the bundled record; release status; eleven passes.
+- 1.3 (2026-09-05, BOSUN): named ZeeBeam with the manuscript (v3.4); Dark Lantern is the research
+  programme. No technical content changed.
+- 1.2 (2026-09-05, BOSUN): renamed with the manuscript (Dark Lantern the project, ZeeBeam the proved
+  recording); manuscript reference v3.3. No technical content changed.
+
+- 1.1 (2026-09-03, BOSUN): Sol ultra audit applied. Frames not photographs; privacy claim narrowed
+  to the manuscript's; hash as claim ticket; key trust per A2; timing and cost from bundled records;
+  protocol described as the operator's record; beacon, chain, pattern and camera sentences made
+  conditional; scorers trained on this recording and frozen before proving; receipt fingerprint and
+  opening; memo note; chain proof scope; three-way checking and non-independence of the referee; time
+  bound with its conditions; receipt without upper bound; pose confound stated exactly; rows 0 to 259
+  versus 1 to 259; future work per the manuscript; bundle contents and status.
+- 1.0 (2026-09-03, BOSUN): written on the principal's request as the plain-language companion to the
+  manuscript; every claim and every caveat traced to the manuscript's sections. Nothing here is
+  published.

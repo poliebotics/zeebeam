@@ -1,0 +1,19 @@
+{
+ "schema": "zeebeam-reproducible-guest/v3",
+ "date": "2026-09-02",
+ "elf_file": "zeebeam_guest_final.elf",
+ "elf_bytes": 1171416,
+ "elf_sha256": "8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db",
+ "sp1_vkey": "0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490",
+ "statement_bytes": 1101,
+ "august_magic": "ZBAUGST4",
+ "adds": "previous-row advance leg + both beacon rounds published (r_{t-1}, r_t)",
+ "controls": "row 96 full 1101/1101 (4,149,712,293 instr); row 72 independent 1101/1101 (4,148,971,330); negative: row-95 signature altered -> previous-row leg rejects",
+ "rustflags": [
+  "--remap-path-prefix=<CARGO_HOME>=/cargo",
+  "--remap-path-prefix=<tree root>=/bosun"
+ ],
+ "locked": true,
+ "machine_paths_embedded": 0,
+ "status": "PROVED in ceremony 2 (2 Sep 2026): see final_relation/ceremony2/ and PINS_final.json; this record documents the path-independent build that ceremony 2 reproduced byte for byte"
+}

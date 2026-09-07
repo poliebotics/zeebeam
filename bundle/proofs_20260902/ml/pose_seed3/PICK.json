@@ -1,0 +1,41 @@
+{
+ "expect": [
+  102,
+  93,
+  104,
+  102,
+  92
+ ],
+ "median": 102,
+ "pick_rule": "median accuracy, ties -> lowest seed value, None==20260823",
+ "picked_file": "out/ckpts_full_r64/full_r64_seed3.pt",
+ "picked_seed": 3,
+ "seeds": {
+  "seed1": {
+   "correct": 93,
+   "file": "out/ckpts_full_r64/full_r64_seed1.pt",
+   "sha256": "646866756ef1ee8aee8609aae08209bb23cf81e55b31f776eb1a40ba08a42ad5"
+  },
+  "seed2": {
+   "correct": 104,
+   "file": "out/ckpts_full_r64/full_r64_seed2.pt",
+   "sha256": "11a8eae83745e2aae2a22ac6dff945eb7b0852ee99d5cdc0019215c2c0373264"
+  },
+  "seed20260823_contract": {
+   "correct": 102,
+   "file": "out/ckpts_full_r64/full_r64_seed20260823_contract.pt",
+   "sha256": "e1e300c20498c514116900f44ebf12f7820346c1b81e260c1490a5831f19ca72"
+  },
+  "seed3": {
+   "correct": 102,
+   "file": "out/ckpts_full_r64/full_r64_seed3.pt",
+   "sha256": "b69f7ce917f9be6fca91ceb742e0450d4760d6885947ef70d6d99984616910fb"
+  },
+  "seed4": {
+   "correct": 92,
+   "file": "out/ckpts_full_r64/full_r64_seed4.pt",
+   "sha256": "4af2a37c6a235ada98f72e540dbd8af1b9fb0ef06f59c170478413409b39c313"
+  }
+ },
+ "spec_sha_preprocess_uncropped": "a3985f693e1c017037fda13e7b6d15f8896c4d195e02a6298f198552560e8e08"
+}

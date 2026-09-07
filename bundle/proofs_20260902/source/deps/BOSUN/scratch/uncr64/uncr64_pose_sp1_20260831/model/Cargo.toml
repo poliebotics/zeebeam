@@ -1,0 +1,11 @@
+[package]
+name = "zeebeam-uncr64-pose-model"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+
+[lib]
+name = "zeebeam_uncr64_pose_model"
+path = "src/lib.rs"

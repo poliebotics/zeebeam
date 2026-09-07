@@ -1,0 +1,25 @@
+trapdoor: present, flag 1 expected
+=== ROW 72 (cuda) ===
+Wed Sep  2 16:20:53 UTC 2026
+mode=ceremony_groth16
+prover=local_cuda_explicit
+row=72
+guest_elf_bytes=1171416 guest_elf_sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+oracle=independent_row_72 checked=1101 circuit_derived=0
+oracle_note=pose verdict 0, head saturation 0, logit sums [6734, -2425, -875, 1520, -6138, -2992, -28597, -11477, -14082, 1516, -11595] match the audited parity vectors
+oracle_note=typed context, typed root and uncropped commitment match row_oracle.py; coupling score numerator 56821525 (denominator 4) is circuit-derived
+public_values_bytes=1101
+public_values_sha256=9b560f900965b110cb7d1e67d142e8bc8f8bca8143134659a34d540a116a5190
+prove_elapsed_ms=749813
+verify_and_tamper_elapsed_ms=363
+host_peak_rss_kib=Some(114240)
+proof_output=/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902/row_072_groth16.bin
+proof_bytes=2795 proof_sha256=1e505800177fde5b1d93a036d14fafd786618bd2f38e675672200226d4e08a65
+verified_proof=true
+proof_generated=true
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:53.12
+	Maximum resident set size (kbytes): 114240
+	Exit status: 0
+Wed Sep  2 16:33:46 UTC 2026
+ROW_72_END

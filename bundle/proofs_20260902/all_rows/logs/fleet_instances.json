@@ -1,0 +1,85 @@
+{
+ "instances": [
+  {
+   "id": "fleet-box-0-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-1-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-2-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-3-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-4-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-5-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-6-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  },
+  {
+   "id": "fleet-box-7-id-redacted",
+   "type": "gpu_1x_a100_sxm4",
+   "region": "us-east-1",
+   "gpus": 1,
+   "status": "terminated 2026-09-03 03:55-04:33 UTC (verified: instance list empty)",
+   "ip": "redacted",
+   "usd_per_hour": 1.99,
+   "launched_by": "the operator via direct_launch_fleet_20260902.py"
+  }
+ ],
+ "redaction_note": "Instance identifiers and public IP addresses of the rented Lambda machines were removed before publication (5 September 2026); all eight were terminated on 3 September 2026 and none is reachable."
+}

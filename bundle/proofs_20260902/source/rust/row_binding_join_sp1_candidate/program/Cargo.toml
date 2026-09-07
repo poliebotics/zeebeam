@@ -1,0 +1,17 @@
+[package]
+name = "zeebeam-row-binding-join-program"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# SP1 builds the guest as its own target workspace.
+[workspace]
+
+[dependencies]
+sp1-zkvm = { version = "=6.4.0" }
+zeebeam-row-binding-join = { path = "../join" }
+
+[profile.release]
+lto = "thin"
+overflow-checks = true
+

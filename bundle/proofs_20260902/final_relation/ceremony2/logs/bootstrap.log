@@ -1,0 +1,59 @@
+=== box facts ===
+30
+               total        used        free      shared  buff/cache   available
+Mem:             216           0         214           0           1         213
+/dev/vda1       497G   25G  472G   5% /
+name, memory.total [MiB], driver_version
+NVIDIA A100-SXM4-40GB, 40960 MiB, 570.148.08
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+info: downloading installer
+info: profile set to minimal
+info: default host tuple is x86_64-unknown-linux-gnu
+info: syncing channel updates for stable-x86_64-unknown-linux-gnu
+info: latest update on 2026-08-20 for version 1.98.0 (88d9e12ae 2026-08-18)
+info: downloading 3 components
+info: default toolchain set to stable-x86_64-unknown-linux-gnu
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    15    0    15    0     0    193      0 --:--:-- --:--:-- --:--:--   194
+100  2234  100  2234    0     0  16481      0 --:--:-- --:--:-- --:--:-- 16481
+
+.______  ._______ ._______ ._______ ._______ ._______ ._______ ._______ ._______
+
+   _____  ____  ___
+  / ___/ / __ \<  /
+  \__ \ / /_/ // /                        A performant, 100% open-source,
+ ___/ // ____// /                              general-purpose zkVM.  
+/____//_/    /_/   
+
+._______ ._______ ._______ ._______ ._______ ._______ ._______ ._______ ._______ 
+
+Repo       : https://github.com/succinctlabs/sp1
+Book       : https://docs.succinct.xyz/
+Telegram   : https://t.me/+AzG4ws-kD24yMGYx
+
+._______ ._______ ._______ ._______ ._______ ._______ ._______ ._______ ._______ 
+
+sp1up: installing SP1 (version v6.4.0, tag v6.4.0)
+sp1up: downloading cargo_prove_v6.4.0_linux_amd64.tar.gz
+#=#=#                                                                         ##########                                                                14.4%############################                                              39.4%############################################################              83.5%######################################################################## 100.0%
+sp1up: installed - cargo-prove sp1 (f66b4bf 2026-08-12T14:40:11.709680161Z)
+sp1up: installing rust toolchain
+Successfully cleaned up ~/.sp1 directory.
+Successfully created ~/.sp1 directory.
+Successfully removed existing toolchain.
+info: no toolchain installed for 'succinct'
+Successfully linked toolchain to rustup.
+sp1up: installed rust toolchain
+sp1up: done!
+cargo-prove sp1 (f66b4bf 2026-08-12T14:40:11.709680161Z)
+go version go1.23.4 linux/amd64
+succinct
+Docker version 28.3.1, build 38b7060
+BOOTSTRAP_DONE

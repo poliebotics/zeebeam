@@ -1,0 +1,17 @@
+[package]
+name = "zeebeam-preprocess-v1-candidate"
+version = "0.1.0"
+edition = "2024"
+publish = false
+build = "build.rs"
+
+[lib]
+name = "zeebeam_preprocess_v1_candidate"
+path = "src/lib.rs"
+
+[[bin]]
+name = "zeebeam-preprocess-v1-candidate"
+path = "src/main.rs"
+
+[profile.release]
+overflow-checks = true

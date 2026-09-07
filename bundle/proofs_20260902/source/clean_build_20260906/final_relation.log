@@ -1,0 +1,74 @@
+start 2026-09-06T00:37:56Z
+STAGED_OK root=/home/c/Documents/BOSUN/scratch/joined_build_20260901
+STAGE_DONE
+driver_sha256=17030fbaf7e2c747376c91c4377043f5a6a741eb7c9886d448e23e1f913b0d2b
+warning: `#[must_use]` attribute cannot be used on trait methods in impl blocks
+   --> /home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0/src/fr.rs:690:5
+    |
+690 |     #[must_use]
+    |     ^^^^^^^^^^^
+    |
+    = help: `#[must_use]` can be applied to data types, foreign functions, functions, inherent methods, provided trait methods, required trait methods, and traits
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+    = note: `#[warn(unused_attributes)]` (part of `#[warn(unused)]`) on by default
+
+warning: `#[must_use]` attribute cannot be used on trait methods in impl blocks
+   --> /home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0/src/fr.rs:695:5
+    |
+695 |     #[must_use]
+    |     ^^^^^^^^^^^
+    |
+    = help: `#[must_use]` can be applied to data types, foreign functions, functions, inherent methods, provided trait methods, required trait methods, and traits
+    = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+
+warning: `#[must_use]` attribute cannot be used on trait methods in impl blocks
+    --> /home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0/src/lib.rs:1283:5
+     |
+1283 |     #[must_use]
+     |     ^^^^^^^^^^^
+     |
+     = help: `#[must_use]` can be applied to data types, foreign functions, functions, inherent methods, provided trait methods, required trait methods, and traits
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+
+warning: `#[must_use]` attribute cannot be used on trait methods in impl blocks
+    --> /home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0/src/lib.rs:1314:5
+     |
+1314 |     #[must_use]
+     |     ^^^^^^^^^^^
+     |
+     = help: `#[must_use]` can be applied to data types, foreign functions, functions, inherent methods, provided trait methods, required trait methods, and traits
+     = warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+
+warning: constant `UNCROPPED_SPEC_SHA256_ORACLE` is never used
+  --> /home/c/Documents/BOSUN/scratch/joined_build_20260901/BOSUN/zeebeam-science/rust/row_binding_join_sp1_candidate/native/src/lib.rs:88:7
+   |
+88 | const UNCROPPED_SPEC_SHA256_ORACLE: &str =
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `jubjub` (lib) generated 4 warnings (run `cargo fix --lib -p jubjub` to apply 4 suggestions)
+warning: `zeebeam-row-binding-join-native` (lib) generated 1 warning
+warning: zeebeam-row-binding-membership-script@0.1.0: rustc +succinct --version: "rustc 1.94.0-dev\n"
+warning: zeebeam-row-binding-membership-script@0.1.0: zeebeam-row-binding-membership-program built at 2026-09-06 01:38:33
+warning: field `trapdoor_flag` is never read
+  --> src/witness.rs:65:9
+   |
+59 | pub struct Built {
+   |            ----- field in this struct
+...
+65 |     pub trapdoor_flag: u8,
+   |         ^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `zeebeam-row-binding-membership-script` (bin "zeebeam-row-binding-membership-execute") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1m 25s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+elf=../program/target/elf-compilation/riscv64im-succinct-zkvm-elf/release/zeebeam-row-binding-membership-program
+guest_elf_bytes=1171416 guest_elf_sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+home_paths_in_elf=0
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+BUILD_REPRODUCED_OK sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+exit=0 2026-09-06T00:39:35Z

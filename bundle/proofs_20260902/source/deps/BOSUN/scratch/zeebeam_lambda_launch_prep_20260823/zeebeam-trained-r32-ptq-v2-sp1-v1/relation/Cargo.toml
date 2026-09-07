@@ -1,0 +1,9 @@
+[package]
+name = "zeebeam-trained-r32-ptq-v2-relation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+blake3 = { version = "=1.8.1", default-features = false, features = ["pure"] }
+zeebeam-trained-r32-ptq-v2-model = { path = "../model" }
+

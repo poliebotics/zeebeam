@@ -1,0 +1,6 @@
+row 1 rc=0 22s sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 oracle=independent_row_1 checked=1101 circuit_derived=0 verified_proof=true 
+row 95 rc=0 21s sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 oracle=independent_row_95 checked=1101 circuit_derived=0 verified_proof=true 
+row 130 rc=0 22s sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 oracle=independent_row_130 checked=1101 circuit_derived=0 verified_proof=true 
+row 200 rc=0 20s sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 oracle=independent_row_200 checked=1101 circuit_derived=0 verified_proof=true 
+row 259 rc=0 21s sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 oracle=independent_row_259 checked=1101 circuit_derived=0 verified_proof=true 
+COLD_VERIFY_END

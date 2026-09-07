@@ -1,0 +1,36 @@
+classification=CANDIDATE_ORDERED_MEMBERSHIP
+mode=ceremony_groth16
+prover=local_cuda_explicit
+row=102
+trapdoor_flag_expected=1
+sp1_circuit_version=v6.1.0
+cycle_limit=4400000000
+raw_bytes=24472000 raw_sha256=e4f2443e7e94d3f6e2614eec0adcf1d3fce3bc0a73aa2eb85775b6acdecd11ef
+guest_elf_bytes=1171416 guest_elf_sha256=8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+setup_elapsed_ms=20842
+Setting environment variables took 95.262µs
+Reading R1CS took 22.091107918s
+Reading proving key took 4.534731624s
+Reading witness file took 642.016µs
+Deserializing JSON data took 37.263965ms
+Generating witness took 1.031635663s
+[90m00:11:35[0m DBG constraint system solver done [36mnbConstraints=[0m15972262 [36mtook=[0m6436.408099
+[90m00:11:49[0m DBG prover done [36macceleration=[0mnone [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m15972262 [36mtook=[0m13976.058077
+Generating proof took 20.412800105s
+[90m00:11:49[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m00:11:49[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m00:11:49[0m [33mWRN[0m [1mignoring uninitialized slice[0m [36mslice name=[0mVars [36mslice type=[0m[]frontend.Variable
+[90m00:11:49[0m DBG verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m0.814741
+oracle=independent_row_102 checked=1101 circuit_derived=0
+oracle_note=pose verdict 1, head saturation 0, logit sums [4862, 14095, 363, -3695, -13947, 4060, -34507, 190, -14053, -2197, -5799] match the audited parity vectors
+oracle_note=typed context, typed root and uncropped commitment match row_oracle.py; coupling score numerator 55726148 (denominator 4) is circuit-derived
+public_values_bytes=1101
+public_values_sha256=d6f31f5b62099f852dd5a0e75a036c43f63bee7c40ecac0ec9988497b32a99ca
+prove_elapsed_ms=792870
+verify_and_tamper_elapsed_ms=365
+host_peak_rss_kib=Some(114260)
+proof_output=/home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_fleet_20260902/row_102_groth16.bin
+proof_bytes=2795 proof_sha256=3c32eccd8d6a166626b152d6a2b3f212ad455e8021c9b57ac2593798469250d5
+verified_proof=true
+proof_generated=true

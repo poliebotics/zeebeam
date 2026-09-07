@@ -1,0 +1,9 @@
+# halo, 2026-09-03T05:33:48Z: standalone sp1-verifier 6.4.0 on the raw chain proof
+$ zeebeam-standalone-verifier final_relation/chain/chain_groth16_proof.bin final_relation/chain/chain_groth16_public_values.bin 0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+proof_bytes=356 proof_sha256=68cab3a0e279b7cee30493015cb4069e89babed5dc2bc5879b0534dc2ac0775e
+public_values_bytes=279 public_values_sha256=a6d1ae85c09025824dfcd0023fe395d5107a2969b7eb4868dabd18455e9f64f8
+sp1_vkey_hash=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+tamper_public_byte_87_rejected=true
+wrong_vkey_rejected=true
+VERIFIED
+exit=0

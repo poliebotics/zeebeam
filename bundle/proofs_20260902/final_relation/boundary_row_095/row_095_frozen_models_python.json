@@ -1,0 +1,39 @@
+{
+ "row": 95,
+ "coupling_score_numerator": 2910142,
+ "coupling_score_denominator": 4,
+ "coupling_saturation_counts": {
+  "camera_input": 0,
+  "emission_input": 0,
+  "resolution_r32_v2.blocks.0.conv": 0,
+  "resolution_r32_v2.blocks.1.conv": 0,
+  "resolution_r32_v2.blocks.2.conv": 0,
+  "resolution_r32_v2.blocks.3.conv": 0,
+  "resolution_r32_v2.blocks.4.conv": 0,
+  "resolution_r32_v2.logit_head": 0
+ },
+ "pose_logit_sums": [
+  12498,
+  20530,
+  6663,
+  1316,
+  -17521,
+  -4924,
+  -22208,
+  3745,
+  -11932,
+  -6566,
+  -11215
+ ],
+ "pose_verdict": 1,
+ "pose_head_saturation": 0,
+ "pose_saturation_counts": {
+  "camera_input": 0,
+  "camera_pose_uncrfull_r64_q1.blocks.0.conv": 0,
+  "camera_pose_uncrfull_r64_q1.blocks.1.conv": 0,
+  "camera_pose_uncrfull_r64_q1.blocks.2.conv": 0,
+  "camera_pose_uncrfull_r64_q1.blocks.3.conv": 0,
+  "camera_pose_uncrfull_r64_q1.blocks.4.conv": 0,
+  "camera_pose_uncrfull_r64_q1.class_head": 0
+ }
+}

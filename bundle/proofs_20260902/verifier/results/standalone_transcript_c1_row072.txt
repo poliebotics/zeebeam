@@ -1,0 +1,8 @@
+# ceremony 1 row 72
+proof_bytes=356 proof_sha256=9684f0701c0e510425d9a4f48e100598534d7fe4396b3556b91e3ac4da76b2e1
+public_values_bytes=1085 public_values_sha256=baf0c6f3d496579f274e3593c93c10834cfa1eb5c2d9137cc93fb78754553bc7
+sp1_vkey_hash=0x0092cba2c77fe7fc426bb539add5d0365e4edea340c2f3c040da9bd73cf9a82c
+tamper_public_byte_87_rejected=true
+wrong_vkey_rejected=true
+VERIFIED
+exit=0

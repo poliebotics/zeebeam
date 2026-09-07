@@ -1,0 +1,5000 @@
+{
+ "schema": "zeebeam-august-pose-annotation/v2",
+ "source_take": "/data/zeebeam_evidence_20260822/stage/live_300s_training_001",
+ "take_root_blake3": "8db2dfc51396d763f7b89629745b3d6609c5d3290ada9f59e2eda9e2cadefc17",
+ "cue_labels_source_sha256": "6d7a2af0cb67b17335a00c7c0005e7745faba85d1b943ca21cbc227ed0349a19",
+ "annotator": "BOSUN (Claude/Fable), halo desk, 2026-08-23",
+ "method": "visual inspection of 13 per-cue thumbnail sheets rendered from the raw Bayer G1 plane under the Phase G crop (3.2x viewing gain); block-level verdict per row",
+ "ceiling": "CUE-AWARE compliance annotation, NOT blind: the annotator saw each row's cue label, so this confirms the cued pose is present, it is not an independent blind pose label. hold_confirmed rows are usable to claim \"captured under cue X with the cued pose visually present\". settling rows (onset to hold) and no_cue_truth (pre_cue) are excluded. Block-level, not per-row-precise; hold_from is BOSUN's first-confirmed-hold row per cue. A blind independent annotation (cue labels hidden/shuffled) remains a separate pass if a stronger claim is needed. The 288 verification rows were not opened.",
+ "counts": {
+  "hold_confirmed": 577,
+  "settling": 98,
+  "no_cue_truth": 37
+ },
+ "rows": [
+  {
+   "row": 0,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 1,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 2,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 3,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 4,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 5,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 6,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 7,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 8,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 9,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 10,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 11,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 12,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 13,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 14,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 15,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 16,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 17,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 18,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 19,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 20,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 21,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 22,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 23,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 24,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 25,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 26,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 27,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 28,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 29,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 30,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 31,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 32,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 33,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 34,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 35,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 36,
+   "cue": "pre_cue",
+   "seconds_since_cue": null,
+   "observed_verdict": "no_cue_truth",
+   "observed_pose": null
+  },
+  {
+   "row": 37,
+   "cue": "01_neutral",
+   "seconds_since_cue": 0.131,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 38,
+   "cue": "01_neutral",
+   "seconds_since_cue": 0.531,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 39,
+   "cue": "01_neutral",
+   "seconds_since_cue": 1.065,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 40,
+   "cue": "01_neutral",
+   "seconds_since_cue": 1.465,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 41,
+   "cue": "01_neutral",
+   "seconds_since_cue": 1.865,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 42,
+   "cue": "01_neutral",
+   "seconds_since_cue": 2.265,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 43,
+   "cue": "01_neutral",
+   "seconds_since_cue": 2.665,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 44,
+   "cue": "01_neutral",
+   "seconds_since_cue": 3.065,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 45,
+   "cue": "01_neutral",
+   "seconds_since_cue": 3.465,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 46,
+   "cue": "01_neutral",
+   "seconds_since_cue": 3.865,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 47,
+   "cue": "01_neutral",
+   "seconds_since_cue": 4.265,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 48,
+   "cue": "01_neutral",
+   "seconds_since_cue": 4.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 49,
+   "cue": "01_neutral",
+   "seconds_since_cue": 5.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 50,
+   "cue": "01_neutral",
+   "seconds_since_cue": 5.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 51,
+   "cue": "01_neutral",
+   "seconds_since_cue": 5.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 52,
+   "cue": "01_neutral",
+   "seconds_since_cue": 6.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 53,
+   "cue": "01_neutral",
+   "seconds_since_cue": 6.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 54,
+   "cue": "01_neutral",
+   "seconds_since_cue": 7.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 55,
+   "cue": "01_neutral",
+   "seconds_since_cue": 7.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 56,
+   "cue": "01_neutral",
+   "seconds_since_cue": 7.998,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 57,
+   "cue": "01_neutral",
+   "seconds_since_cue": 8.465,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 58,
+   "cue": "01_neutral",
+   "seconds_since_cue": 8.998,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 59,
+   "cue": "01_neutral",
+   "seconds_since_cue": 9.398,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 60,
+   "cue": "01_neutral",
+   "seconds_since_cue": 9.798,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 61,
+   "cue": "01_neutral",
+   "seconds_since_cue": 10.265,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 62,
+   "cue": "01_neutral",
+   "seconds_since_cue": 10.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 63,
+   "cue": "01_neutral",
+   "seconds_since_cue": 11.198,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 64,
+   "cue": "01_neutral",
+   "seconds_since_cue": 11.598,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 65,
+   "cue": "01_neutral",
+   "seconds_since_cue": 11.998,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 66,
+   "cue": "01_neutral",
+   "seconds_since_cue": 12.398,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 67,
+   "cue": "01_neutral",
+   "seconds_since_cue": 12.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 68,
+   "cue": "01_neutral",
+   "seconds_since_cue": 13.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 69,
+   "cue": "01_neutral",
+   "seconds_since_cue": 13.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 70,
+   "cue": "01_neutral",
+   "seconds_since_cue": 14.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 71,
+   "cue": "01_neutral",
+   "seconds_since_cue": 14.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 72,
+   "cue": "01_neutral",
+   "seconds_since_cue": 14.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 73,
+   "cue": "01_neutral",
+   "seconds_since_cue": 15.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 74,
+   "cue": "01_neutral",
+   "seconds_since_cue": 15.798,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 75,
+   "cue": "01_neutral",
+   "seconds_since_cue": 16.198,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 76,
+   "cue": "01_neutral",
+   "seconds_since_cue": 16.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 77,
+   "cue": "01_neutral",
+   "seconds_since_cue": 16.998,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 78,
+   "cue": "01_neutral",
+   "seconds_since_cue": 17.398,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 79,
+   "cue": "01_neutral",
+   "seconds_since_cue": 17.799,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 80,
+   "cue": "01_neutral",
+   "seconds_since_cue": 18.199,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 81,
+   "cue": "01_neutral",
+   "seconds_since_cue": 18.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 82,
+   "cue": "01_neutral",
+   "seconds_since_cue": 18.999,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 83,
+   "cue": "01_neutral",
+   "seconds_since_cue": 19.399,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 84,
+   "cue": "01_neutral",
+   "seconds_since_cue": 19.799,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms down, standing, facing camera"
+  },
+  {
+   "row": 85,
+   "cue": "02_superman",
+   "seconds_since_cue": 0.198,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 86,
+   "cue": "02_superman",
+   "seconds_since_cue": 0.732,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 87,
+   "cue": "02_superman",
+   "seconds_since_cue": 1.198,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 88,
+   "cue": "02_superman",
+   "seconds_since_cue": 1.599,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 89,
+   "cue": "02_superman",
+   "seconds_since_cue": 1.998,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 90,
+   "cue": "02_superman",
+   "seconds_since_cue": 2.398,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 91,
+   "cue": "02_superman",
+   "seconds_since_cue": 2.798,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 92,
+   "cue": "02_superman",
+   "seconds_since_cue": 3.199,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 93,
+   "cue": "02_superman",
+   "seconds_since_cue": 3.665,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 94,
+   "cue": "02_superman",
+   "seconds_since_cue": 4.065,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 95,
+   "cue": "02_superman",
+   "seconds_since_cue": 4.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 96,
+   "cue": "02_superman",
+   "seconds_since_cue": 4.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 97,
+   "cue": "02_superman",
+   "seconds_since_cue": 5.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 98,
+   "cue": "02_superman",
+   "seconds_since_cue": 5.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 99,
+   "cue": "02_superman",
+   "seconds_since_cue": 6.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 100,
+   "cue": "02_superman",
+   "seconds_since_cue": 6.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 101,
+   "cue": "02_superman",
+   "seconds_since_cue": 6.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 102,
+   "cue": "02_superman",
+   "seconds_since_cue": 7.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 103,
+   "cue": "02_superman",
+   "seconds_since_cue": 7.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 104,
+   "cue": "02_superman",
+   "seconds_since_cue": 8.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 105,
+   "cue": "02_superman",
+   "seconds_since_cue": 8.665,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 106,
+   "cue": "02_superman",
+   "seconds_since_cue": 9.065,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 107,
+   "cue": "02_superman",
+   "seconds_since_cue": 9.465,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 108,
+   "cue": "02_superman",
+   "seconds_since_cue": 9.865,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 109,
+   "cue": "02_superman",
+   "seconds_since_cue": 10.265,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 110,
+   "cue": "02_superman",
+   "seconds_since_cue": 10.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 111,
+   "cue": "02_superman",
+   "seconds_since_cue": 11.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 112,
+   "cue": "02_superman",
+   "seconds_since_cue": 11.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 113,
+   "cue": "02_superman",
+   "seconds_since_cue": 11.999,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 114,
+   "cue": "02_superman",
+   "seconds_since_cue": 12.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 115,
+   "cue": "02_superman",
+   "seconds_since_cue": 12.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 116,
+   "cue": "02_superman",
+   "seconds_since_cue": 13.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 117,
+   "cue": "02_superman",
+   "seconds_since_cue": 13.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 118,
+   "cue": "02_superman",
+   "seconds_since_cue": 14.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 119,
+   "cue": "02_superman",
+   "seconds_since_cue": 14.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 120,
+   "cue": "02_superman",
+   "seconds_since_cue": 14.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 121,
+   "cue": "02_superman",
+   "seconds_since_cue": 15.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 122,
+   "cue": "02_superman",
+   "seconds_since_cue": 15.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 123,
+   "cue": "02_superman",
+   "seconds_since_cue": 16.199,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 124,
+   "cue": "02_superman",
+   "seconds_since_cue": 16.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 125,
+   "cue": "02_superman",
+   "seconds_since_cue": 17.065,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 126,
+   "cue": "02_superman",
+   "seconds_since_cue": 17.466,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 127,
+   "cue": "02_superman",
+   "seconds_since_cue": 17.865,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 128,
+   "cue": "02_superman",
+   "seconds_since_cue": 18.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 129,
+   "cue": "02_superman",
+   "seconds_since_cue": 18.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 130,
+   "cue": "02_superman",
+   "seconds_since_cue": 19.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 131,
+   "cue": "02_superman",
+   "seconds_since_cue": 19.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 132,
+   "cue": "02_superman",
+   "seconds_since_cue": 19.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 133,
+   "cue": "02_superman",
+   "seconds_since_cue": 20.466,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 134,
+   "cue": "02_superman",
+   "seconds_since_cue": 20.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 135,
+   "cue": "02_superman",
+   "seconds_since_cue": 21.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 136,
+   "cue": "02_superman",
+   "seconds_since_cue": 21.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 137,
+   "cue": "02_superman",
+   "seconds_since_cue": 22.066,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 138,
+   "cue": "02_superman",
+   "seconds_since_cue": 22.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 139,
+   "cue": "02_superman",
+   "seconds_since_cue": 22.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 140,
+   "cue": "02_superman",
+   "seconds_since_cue": 23.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 141,
+   "cue": "02_superman",
+   "seconds_since_cue": 23.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 142,
+   "cue": "02_superman",
+   "seconds_since_cue": 24.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 143,
+   "cue": "02_superman",
+   "seconds_since_cue": 24.532,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 144,
+   "cue": "02_superman",
+   "seconds_since_cue": 24.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm raised straight overhead, other down"
+  },
+  {
+   "row": 145,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 0.4,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 146,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 0.799,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 147,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 1.199,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 148,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 1.599,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 149,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 2.066,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 150,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 2.532,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 151,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 2.932,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 152,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 3.332,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 153,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 3.732,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 154,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 4.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 155,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 4.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 156,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 4.999,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 157,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 5.466,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 158,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 5.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 159,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 6.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 160,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 6.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 161,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 7.199,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 162,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 7.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 163,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 8.132,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 164,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 8.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 165,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 8.999,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 166,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 9.399,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 167,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 9.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 168,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 10.2,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 169,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 10.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 170,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 11.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 171,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 11.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 172,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 11.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 173,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 12.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 174,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 12.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 175,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 13.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 176,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 13.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 177,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 13.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 178,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 14.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 179,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 14.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 180,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 15.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 181,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 15.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 182,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 15.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 183,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 16.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 184,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 16.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 185,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 17.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 186,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 17.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 187,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 17.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 188,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 18.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 189,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 18.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 190,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 19.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 191,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 19.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 192,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 20.066,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 193,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 20.466,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 194,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 20.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 195,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 21.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 196,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 21.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 197,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 22.066,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 198,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 22.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 199,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 22.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 200,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 23.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 201,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 23.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 202,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 24.199,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 203,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 24.599,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 204,
+   "cue": "03_letter_y",
+   "seconds_since_cue": 25.0,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised in a V"
+  },
+  {
+   "row": 205,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 0.4,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 206,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 0.8,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 207,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 1.201,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 208,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 1.733,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 209,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 2.133,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 210,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 2.533,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 211,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 2.933,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 212,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 3.333,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 213,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 3.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 214,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 4.2,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 215,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 4.6,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 216,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 5.0,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 217,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 5.4,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 218,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 5.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 219,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 6.2,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 220,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 6.6,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 221,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 7.0,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 222,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 7.4,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 223,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 7.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 224,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 8.266,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 225,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 8.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 226,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 9.138,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 227,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 9.666,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 228,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 10.066,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 229,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 10.466,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 230,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 10.866,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 231,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 11.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 232,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 11.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 233,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 12.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 234,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 12.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 235,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 12.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 236,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 13.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 237,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 13.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 238,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 14.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 239,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 14.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 240,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 15.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 241,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 15.6,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 242,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 16.067,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 243,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 16.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 244,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 16.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 245,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 17.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 246,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 17.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 247,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 18.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 248,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 18.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 249,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 19.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 250,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 19.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 251,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 20.2,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 252,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 20.6,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 253,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 21.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 254,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 21.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 255,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 21.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 256,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 22.333,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 257,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 22.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 258,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 23.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 259,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 23.733,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 260,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 24.133,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 261,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 24.533,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 262,
+   "cue": "04_letter_m",
+   "seconds_since_cue": 24.933,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both hands to head, elbows out"
+  },
+  {
+   "row": 263,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 0.334,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 264,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 0.8,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 265,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 1.2,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 266,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 1.6,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 267,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 2.0,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 268,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 2.4,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 269,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 2.8,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 270,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 3.2,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 271,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 3.6,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 272,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 4.134,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 273,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 4.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 274,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 4.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 275,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 5.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 276,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 5.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 277,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 6.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 278,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 6.667,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 279,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 7.067,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 280,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 7.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 281,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 7.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 282,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 8.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 283,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 8.8,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 284,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 9.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 285,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 9.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 286,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 10.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 287,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 10.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 288,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 11.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 289,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 11.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 290,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 11.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 291,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 12.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 292,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 12.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 293,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 13.201,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 294,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 13.667,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 295,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 14.067,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 296,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 14.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 297,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 14.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 298,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 15.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 299,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 15.667,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 300,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 16.067,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 301,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 16.467,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 302,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 16.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 303,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 17.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 304,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 17.801,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 305,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 18.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 306,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 18.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 307,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 19.201,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 308,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 19.601,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 309,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 20.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 310,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 20.401,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 311,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 20.867,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 312,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 21.267,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 313,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 21.667,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 314,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 22.067,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 315,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 22.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 316,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 23.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 317,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 23.472,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 318,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 23.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 319,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 24.401,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 320,
+   "cue": "05_letter_c",
+   "seconds_since_cue": 24.801,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "torso curved, arms to one side (C shape)"
+  },
+  {
+   "row": 321,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 0.201,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 322,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 0.601,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 323,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 1.001,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 324,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 1.401,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 325,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 1.801,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 326,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 2.201,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 327,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 2.734,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 328,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 3.134,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 329,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 3.534,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 330,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 3.934,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 331,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 4.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 332,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 4.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 333,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 5.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 334,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 5.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 335,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 5.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 336,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 6.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 337,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 6.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 338,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 7.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 339,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 7.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 340,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 8.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 341,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 8.468,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 342,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 8.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 343,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 9.334,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 344,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 9.734,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 345,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 10.206,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 346,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 10.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 347,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 11.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 348,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 11.534,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 349,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 12.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 350,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 12.468,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 351,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 12.934,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 352,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 13.401,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 353,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 13.868,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 354,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 14.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 355,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 14.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 356,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 15.201,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 357,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 15.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 358,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 16.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 359,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 16.601,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 360,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 17.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 361,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 17.402,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 362,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 17.801,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 363,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 18.201,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 364,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 18.601,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 365,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 19.068,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 366,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 19.535,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 367,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 20.001,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 368,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 20.401,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 369,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 20.868,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 370,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 21.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 371,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 21.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 372,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 22.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 373,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 22.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 374,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 23.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 375,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 23.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 376,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 24.134,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 377,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 24.535,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 378,
+   "cue": "06_letter_a",
+   "seconds_since_cue": 24.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms joined overhead, legs apart (A)"
+  },
+  {
+   "row": 379,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 0.335,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 380,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 0.734,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 381,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 1.268,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 382,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 1.668,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 383,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 2.068,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 384,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 2.468,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 385,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 2.868,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 386,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 3.268,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 387,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 3.735,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 388,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 4.201,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 389,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 4.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 390,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 5.201,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 391,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 5.669,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 392,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 6.068,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 393,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 6.468,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 394,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 6.868,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 395,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 7.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 396,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 7.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 397,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 8.135,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 398,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 8.535,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 399,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 8.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 400,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 9.335,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 401,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 9.801,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 402,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 10.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 403,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 10.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 404,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 11.135,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 405,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 11.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 406,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 12.002,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 407,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 12.401,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 408,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 12.802,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 409,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 13.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 410,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 13.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 411,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 14.068,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 412,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 14.468,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 413,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 14.868,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 414,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 15.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 415,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 15.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 416,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 16.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 417,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 16.54,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 418,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 16.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 419,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 17.335,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 420,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 17.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 421,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 18.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 422,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 18.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 423,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 19.068,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 424,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 19.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 425,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 19.868,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 426,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 20.268,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 427,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 20.802,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 428,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 21.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 429,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 21.668,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 430,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 22.068,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 431,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 22.535,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 432,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 22.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 433,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 23.402,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 434,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 23.802,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 435,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 24.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 436,
+   "cue": "07_letter_t",
+   "seconds_since_cue": 24.735,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms horizontal (T)"
+  },
+  {
+   "row": 437,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 0.135,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 438,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 0.535,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 439,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 0.935,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 440,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 1.335,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 441,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 1.802,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 442,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 2.202,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 443,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 2.602,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 444,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 3.002,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 445,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 3.402,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 446,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 3.802,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 447,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 4.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 448,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 4.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 449,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 5.002,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 450,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 5.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 451,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 5.802,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 452,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 6.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 453,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 6.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 454,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 7.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 455,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 7.535,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 456,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 8.002,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 457,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 8.402,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 458,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 8.802,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 459,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 9.202,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 460,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 9.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 461,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 10.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 462,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 10.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 463,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 10.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 464,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 11.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 465,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 11.935,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 466,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 12.402,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 467,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 12.869,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 468,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 13.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 469,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 13.669,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 470,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 14.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 471,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 14.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 472,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 15.008,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 473,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 15.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 474,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 15.869,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 475,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 16.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 476,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 16.669,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 477,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 17.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 478,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 17.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 479,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 17.869,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 480,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 18.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 481,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 18.669,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 482,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 19.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 483,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 19.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 484,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 19.869,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 485,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 20.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 486,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 20.669,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 487,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 21.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 488,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 21.602,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 489,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 22.069,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 490,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 22.469,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 491,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 22.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 492,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 23.336,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 493,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 23.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 494,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 24.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 495,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 24.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 496,
+   "cue": "08_letter_x",
+   "seconds_since_cue": 24.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "arms and legs spread (X)"
+  },
+  {
+   "row": 497,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 0.402,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 498,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 0.802,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 499,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 1.269,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 500,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 1.741,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 501,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 2.203,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 502,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 2.602,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 503,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 3.002,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 504,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 3.403,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 505,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 3.802,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 506,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 4.203,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 507,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 4.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 508,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 5.002,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 509,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 5.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 510,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 5.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 511,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 6.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 512,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 6.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 513,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 7.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 514,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 7.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 515,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 7.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 516,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 8.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 517,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 8.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 518,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 9.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 519,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 9.541,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 520,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 10.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 521,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 10.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 522,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 10.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 523,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 11.27,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 524,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 11.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 525,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 12.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 526,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 12.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 527,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 13.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 528,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 13.408,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 529,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 13.869,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 530,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 14.269,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 531,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 14.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 532,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 15.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 533,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 15.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 534,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 16.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 535,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 16.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 536,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 16.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 537,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 17.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 538,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 17.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 539,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 18.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 540,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 18.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 541,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 18.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 542,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 19.336,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 543,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 19.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 544,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 20.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 545,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 20.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 546,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 20.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 547,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 21.336,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 548,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 21.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 549,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 22.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 550,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 22.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 551,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 22.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 552,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 23.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 553,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 23.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 554,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 24.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 555,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 24.536,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 556,
+   "cue": "09_hands_up",
+   "seconds_since_cue": 24.936,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "both arms raised, elbows bent"
+  },
+  {
+   "row": 557,
+   "cue": "10_point_left",
+   "seconds_since_cue": 0.403,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 558,
+   "cue": "10_point_left",
+   "seconds_since_cue": 0.803,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 559,
+   "cue": "10_point_left",
+   "seconds_since_cue": 1.27,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 560,
+   "cue": "10_point_left",
+   "seconds_since_cue": 1.67,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 561,
+   "cue": "10_point_left",
+   "seconds_since_cue": 2.07,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 562,
+   "cue": "10_point_left",
+   "seconds_since_cue": 2.536,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 563,
+   "cue": "10_point_left",
+   "seconds_since_cue": 3.003,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 564,
+   "cue": "10_point_left",
+   "seconds_since_cue": 3.47,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 565,
+   "cue": "10_point_left",
+   "seconds_since_cue": 3.936,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 566,
+   "cue": "10_point_left",
+   "seconds_since_cue": 4.336,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 567,
+   "cue": "10_point_left",
+   "seconds_since_cue": 4.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 568,
+   "cue": "10_point_left",
+   "seconds_since_cue": 5.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 569,
+   "cue": "10_point_left",
+   "seconds_since_cue": 5.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 570,
+   "cue": "10_point_left",
+   "seconds_since_cue": 6.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 571,
+   "cue": "10_point_left",
+   "seconds_since_cue": 6.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 572,
+   "cue": "10_point_left",
+   "seconds_since_cue": 6.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 573,
+   "cue": "10_point_left",
+   "seconds_since_cue": 7.27,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 574,
+   "cue": "10_point_left",
+   "seconds_since_cue": 7.736,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 575,
+   "cue": "10_point_left",
+   "seconds_since_cue": 8.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 576,
+   "cue": "10_point_left",
+   "seconds_since_cue": 8.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 577,
+   "cue": "10_point_left",
+   "seconds_since_cue": 9.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 578,
+   "cue": "10_point_left",
+   "seconds_since_cue": 9.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 579,
+   "cue": "10_point_left",
+   "seconds_since_cue": 9.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 580,
+   "cue": "10_point_left",
+   "seconds_since_cue": 10.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 581,
+   "cue": "10_point_left",
+   "seconds_since_cue": 10.67,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 582,
+   "cue": "10_point_left",
+   "seconds_since_cue": 11.136,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 583,
+   "cue": "10_point_left",
+   "seconds_since_cue": 11.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 584,
+   "cue": "10_point_left",
+   "seconds_since_cue": 12.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 585,
+   "cue": "10_point_left",
+   "seconds_since_cue": 12.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 586,
+   "cue": "10_point_left",
+   "seconds_since_cue": 12.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 587,
+   "cue": "10_point_left",
+   "seconds_since_cue": 13.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 588,
+   "cue": "10_point_left",
+   "seconds_since_cue": 13.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 589,
+   "cue": "10_point_left",
+   "seconds_since_cue": 14.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 590,
+   "cue": "10_point_left",
+   "seconds_since_cue": 14.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 591,
+   "cue": "10_point_left",
+   "seconds_since_cue": 14.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 592,
+   "cue": "10_point_left",
+   "seconds_since_cue": 15.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 593,
+   "cue": "10_point_left",
+   "seconds_since_cue": 15.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 594,
+   "cue": "10_point_left",
+   "seconds_since_cue": 16.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 595,
+   "cue": "10_point_left",
+   "seconds_since_cue": 16.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 596,
+   "cue": "10_point_left",
+   "seconds_since_cue": 16.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 597,
+   "cue": "10_point_left",
+   "seconds_since_cue": 17.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 598,
+   "cue": "10_point_left",
+   "seconds_since_cue": 17.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 599,
+   "cue": "10_point_left",
+   "seconds_since_cue": 18.003,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 600,
+   "cue": "10_point_left",
+   "seconds_since_cue": 18.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 601,
+   "cue": "10_point_left",
+   "seconds_since_cue": 18.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 602,
+   "cue": "10_point_left",
+   "seconds_since_cue": 19.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 603,
+   "cue": "10_point_left",
+   "seconds_since_cue": 19.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 604,
+   "cue": "10_point_left",
+   "seconds_since_cue": 20.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 605,
+   "cue": "10_point_left",
+   "seconds_since_cue": 20.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 606,
+   "cue": "10_point_left",
+   "seconds_since_cue": 20.803,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 607,
+   "cue": "10_point_left",
+   "seconds_since_cue": 21.203,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 608,
+   "cue": "10_point_left",
+   "seconds_since_cue": 21.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 609,
+   "cue": "10_point_left",
+   "seconds_since_cue": 22.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 610,
+   "cue": "10_point_left",
+   "seconds_since_cue": 22.403,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 611,
+   "cue": "10_point_left",
+   "seconds_since_cue": 22.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 612,
+   "cue": "10_point_left",
+   "seconds_since_cue": 23.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 613,
+   "cue": "10_point_left",
+   "seconds_since_cue": 23.603,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 614,
+   "cue": "10_point_left",
+   "seconds_since_cue": 24.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 615,
+   "cue": "10_point_left",
+   "seconds_since_cue": 24.537,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 616,
+   "cue": "10_point_left",
+   "seconds_since_cue": 24.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's left"
+  },
+  {
+   "row": 617,
+   "cue": "11_point_right",
+   "seconds_since_cue": 0.337,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 618,
+   "cue": "11_point_right",
+   "seconds_since_cue": 0.737,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 619,
+   "cue": "11_point_right",
+   "seconds_since_cue": 1.137,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 620,
+   "cue": "11_point_right",
+   "seconds_since_cue": 1.537,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 621,
+   "cue": "11_point_right",
+   "seconds_since_cue": 1.937,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 622,
+   "cue": "11_point_right",
+   "seconds_since_cue": 2.337,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 623,
+   "cue": "11_point_right",
+   "seconds_since_cue": 2.737,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 624,
+   "cue": "11_point_right",
+   "seconds_since_cue": 3.137,
+   "observed_verdict": "settling",
+   "observed_pose": null
+  },
+  {
+   "row": 625,
+   "cue": "11_point_right",
+   "seconds_since_cue": 3.537,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 626,
+   "cue": "11_point_right",
+   "seconds_since_cue": 3.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 627,
+   "cue": "11_point_right",
+   "seconds_since_cue": 4.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 628,
+   "cue": "11_point_right",
+   "seconds_since_cue": 4.737,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 629,
+   "cue": "11_point_right",
+   "seconds_since_cue": 5.138,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 630,
+   "cue": "11_point_right",
+   "seconds_since_cue": 5.537,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 631,
+   "cue": "11_point_right",
+   "seconds_since_cue": 5.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 632,
+   "cue": "11_point_right",
+   "seconds_since_cue": 6.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 633,
+   "cue": "11_point_right",
+   "seconds_since_cue": 6.737,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 634,
+   "cue": "11_point_right",
+   "seconds_since_cue": 7.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 635,
+   "cue": "11_point_right",
+   "seconds_since_cue": 7.538,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 636,
+   "cue": "11_point_right",
+   "seconds_since_cue": 7.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 637,
+   "cue": "11_point_right",
+   "seconds_since_cue": 8.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 638,
+   "cue": "11_point_right",
+   "seconds_since_cue": 8.737,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 639,
+   "cue": "11_point_right",
+   "seconds_since_cue": 9.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 640,
+   "cue": "11_point_right",
+   "seconds_since_cue": 9.537,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 641,
+   "cue": "11_point_right",
+   "seconds_since_cue": 9.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 642,
+   "cue": "11_point_right",
+   "seconds_since_cue": 10.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 643,
+   "cue": "11_point_right",
+   "seconds_since_cue": 10.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 644,
+   "cue": "11_point_right",
+   "seconds_since_cue": 11.27,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 645,
+   "cue": "11_point_right",
+   "seconds_since_cue": 11.67,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 646,
+   "cue": "11_point_right",
+   "seconds_since_cue": 12.07,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 647,
+   "cue": "11_point_right",
+   "seconds_since_cue": 12.47,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 648,
+   "cue": "11_point_right",
+   "seconds_since_cue": 12.87,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 649,
+   "cue": "11_point_right",
+   "seconds_since_cue": 13.27,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 650,
+   "cue": "11_point_right",
+   "seconds_since_cue": 13.67,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 651,
+   "cue": "11_point_right",
+   "seconds_since_cue": 14.07,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 652,
+   "cue": "11_point_right",
+   "seconds_since_cue": 14.47,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 653,
+   "cue": "11_point_right",
+   "seconds_since_cue": 14.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 654,
+   "cue": "11_point_right",
+   "seconds_since_cue": 15.27,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 655,
+   "cue": "11_point_right",
+   "seconds_since_cue": 15.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 656,
+   "cue": "11_point_right",
+   "seconds_since_cue": 16.07,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 657,
+   "cue": "11_point_right",
+   "seconds_since_cue": 16.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 658,
+   "cue": "11_point_right",
+   "seconds_since_cue": 16.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 659,
+   "cue": "11_point_right",
+   "seconds_since_cue": 17.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 660,
+   "cue": "11_point_right",
+   "seconds_since_cue": 17.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 661,
+   "cue": "11_point_right",
+   "seconds_since_cue": 18.071,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 662,
+   "cue": "11_point_right",
+   "seconds_since_cue": 18.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 663,
+   "cue": "11_point_right",
+   "seconds_since_cue": 18.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 664,
+   "cue": "11_point_right",
+   "seconds_since_cue": 19.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 665,
+   "cue": "11_point_right",
+   "seconds_since_cue": 19.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 666,
+   "cue": "11_point_right",
+   "seconds_since_cue": 20.071,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 667,
+   "cue": "11_point_right",
+   "seconds_since_cue": 20.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 668,
+   "cue": "11_point_right",
+   "seconds_since_cue": 20.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 669,
+   "cue": "11_point_right",
+   "seconds_since_cue": 21.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 670,
+   "cue": "11_point_right",
+   "seconds_since_cue": 21.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 671,
+   "cue": "11_point_right",
+   "seconds_since_cue": 22.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 672,
+   "cue": "11_point_right",
+   "seconds_since_cue": 22.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 673,
+   "cue": "11_point_right",
+   "seconds_since_cue": 23.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 674,
+   "cue": "11_point_right",
+   "seconds_since_cue": 23.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 675,
+   "cue": "11_point_right",
+   "seconds_since_cue": 23.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 676,
+   "cue": "11_point_right",
+   "seconds_since_cue": 24.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 677,
+   "cue": "11_point_right",
+   "seconds_since_cue": 24.737,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "one arm extended to performer's right"
+  },
+  {
+   "row": 678,
+   "cue": "12_freeze",
+   "seconds_since_cue": 0.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 679,
+   "cue": "12_freeze",
+   "seconds_since_cue": 0.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 680,
+   "cue": "12_freeze",
+   "seconds_since_cue": 1.009,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 681,
+   "cue": "12_freeze",
+   "seconds_since_cue": 1.537,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 682,
+   "cue": "12_freeze",
+   "seconds_since_cue": 1.937,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 683,
+   "cue": "12_freeze",
+   "seconds_since_cue": 2.337,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 684,
+   "cue": "12_freeze",
+   "seconds_since_cue": 2.737,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 685,
+   "cue": "12_freeze",
+   "seconds_since_cue": 3.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 686,
+   "cue": "12_freeze",
+   "seconds_since_cue": 3.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 687,
+   "cue": "12_freeze",
+   "seconds_since_cue": 4.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 688,
+   "cue": "12_freeze",
+   "seconds_since_cue": 4.404,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 689,
+   "cue": "12_freeze",
+   "seconds_since_cue": 4.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 690,
+   "cue": "12_freeze",
+   "seconds_since_cue": 5.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 691,
+   "cue": "12_freeze",
+   "seconds_since_cue": 5.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 692,
+   "cue": "12_freeze",
+   "seconds_since_cue": 6.071,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 693,
+   "cue": "12_freeze",
+   "seconds_since_cue": 6.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 694,
+   "cue": "12_freeze",
+   "seconds_since_cue": 6.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 695,
+   "cue": "12_freeze",
+   "seconds_since_cue": 7.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 696,
+   "cue": "12_freeze",
+   "seconds_since_cue": 7.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 697,
+   "cue": "12_freeze",
+   "seconds_since_cue": 8.137,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 698,
+   "cue": "12_freeze",
+   "seconds_since_cue": 8.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 699,
+   "cue": "12_freeze",
+   "seconds_since_cue": 9.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 700,
+   "cue": "12_freeze",
+   "seconds_since_cue": 9.404,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 701,
+   "cue": "12_freeze",
+   "seconds_since_cue": 9.804,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 702,
+   "cue": "12_freeze",
+   "seconds_since_cue": 10.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 703,
+   "cue": "12_freeze",
+   "seconds_since_cue": 10.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 704,
+   "cue": "12_freeze",
+   "seconds_since_cue": 11.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 705,
+   "cue": "12_freeze",
+   "seconds_since_cue": 11.471,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 706,
+   "cue": "12_freeze",
+   "seconds_since_cue": 11.871,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 707,
+   "cue": "12_freeze",
+   "seconds_since_cue": 12.271,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 708,
+   "cue": "12_freeze",
+   "seconds_since_cue": 12.671,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 709,
+   "cue": "12_freeze",
+   "seconds_since_cue": 13.204,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 710,
+   "cue": "12_freeze",
+   "seconds_since_cue": 13.604,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  },
+  {
+   "row": 711,
+   "cue": "12_freeze",
+   "seconds_since_cue": 14.004,
+   "observed_verdict": "hold_confirmed",
+   "observed_pose": "holds the prior point-right pose (freeze = hold; multi-frame stability relation, per Codex pose contract)"
+  }
+ ]
+}

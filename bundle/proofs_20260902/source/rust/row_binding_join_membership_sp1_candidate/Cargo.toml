@@ -1,0 +1,11 @@
+[workspace]
+members = ["membership", "native"]
+resolver = "2"
+
+[profile.release]
+lto = "thin"
+overflow-checks = true
+
+[patch.crates-io]
+jubjub = { path = "/home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0" }  # sp1-fork compat: consts made non-const, RedJubjub is never exercised
+bls12_381 = { git = "https://github.com/sp1-patches/bls12_381", tag = "patch-0.8.0-sp1-6.2.0" }

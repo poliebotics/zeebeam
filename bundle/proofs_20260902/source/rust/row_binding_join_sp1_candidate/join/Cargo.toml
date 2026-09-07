@@ -1,0 +1,15 @@
+[package]
+name = "zeebeam-row-binding-join"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+sha2 = { version = "=0.10.9", default-features = false }
+zeebeam-b3xof-relation = { path = "../../../../scratch/zeebeam_lambda_artifacts_20260824/reviews/post_hold_followup_closure_20260825T0446Z/b3xof_experiment_snapshot/source/sp1/relation" }
+zeebeam-preprocess-v1-candidate = { path = "../../preprocess_v1_candidate" }
+zeebeam-trained-r32-ptq-v2-model = { path = "../../../../scratch/zeebeam_lambda_launch_prep_20260823/zeebeam-trained-r32-ptq-v2-sp1-v1/model" }
+zeebeam-trained-r32-ptq-v2-relation = { path = "../../../../scratch/zeebeam_lambda_launch_prep_20260823/zeebeam-trained-r32-ptq-v2-sp1-v1/relation" }
+zeebeam-uncr64-pose-model = { path = "../../../../scratch/uncr64/uncr64_pose_sp1_20260831/model" }
+zeebeam-uncr64-pose-relation = { path = "../../../../scratch/uncr64/uncr64_pose_sp1_20260831/relation" }
+bls12_381 = { version = "0.8.0", default-features = false, features = ["groups", "pairings", "alloc", "experimental"] }

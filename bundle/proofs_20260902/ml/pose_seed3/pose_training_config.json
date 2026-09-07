@@ -1,0 +1,55 @@
+{
+  "authority": {
+    "chain_transaction": false,
+    "cloud_launch": false,
+    "cloud_spend": false,
+    "publication": false,
+    "verification_open": false
+  },
+  "candidate_contract_sha256_without_self": "b93ad4656940286606b03e0b358fc084eb42428888c6e6c4a71c50289926793a",
+  "claim_ceiling": {
+    "blind_pose_truth": false,
+    "formal_pass_threshold": null,
+    "proof": false,
+    "reality_claim": false,
+    "resolution_winner": null,
+    "single_take_subject_room_camera_time_background_confound": true
+  },
+  "config_sha256_without_self": "840ab3ac15655ce259aecd292ef18c2452f50224bfacb1795f017e08d3c9e126",
+  "development_scope": {
+    "eligible_annotation_verdict": "hold_confirmed",
+    "excluded_annotation_verdicts": [
+      "settling",
+      "no_cue_truth"
+    ],
+    "expected_annotation_rows": 712,
+    "expected_eligible_rows": 577,
+    "historical_roles_opened_for_pose_only": [
+      "fit",
+      "architecture_selection",
+      "threshold_calibration",
+      "guard"
+    ],
+    "pair_model_ladders_retroactively_changed": false,
+    "separate_verification_rows_opened": 0,
+    "separate_verification_rows_remaining_sealed": 288
+  },
+  "run": {
+    "adam_epsilon": 1e-08,
+    "batch_size": 32,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "device": "cpu",
+    "epochs": 64,
+    "evaluation_batch_size": 64,
+    "gradient_clip_norm": 1.0,
+    "learning_rate": 0.001,
+    "no_early_stopping": true,
+    "optimizer": "adamw",
+    "precision": "float32",
+    "torch_threads": 12,
+    "weight_decay": 0.01
+  },
+  "schema": "zeebeam-camera-pose-resolution-ladder-config/v1-candidate",
+  "status": "development_only_cue_aware_camera_pose_diagnostic"
+}

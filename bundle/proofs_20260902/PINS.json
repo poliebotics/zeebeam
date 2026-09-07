@@ -1,0 +1,137 @@
+{
+ "schema": "zeebeam-one-proof-pins/v1",
+ "sp1": {
+  "sdk_version": "6.4.0",
+  "circuit_version": "v6.1.0",
+  "cargo_prove": "sp1 f66b4bf 2026-08-12",
+  "rustc_succinct": "1.94.0-dev",
+  "prover": "CUDA (sp1-gpu-server, A100-SXM4-40GB) on Lambda us-east-1",
+  "vkey_hash": "0x0092cba2c77fe7fc426bb539add5d0365e4edea340c2f3c040da9bd73cf9a82c",
+  "vkey_hash_row72_same": true,
+  "guest_elf_bytes": 1160904,
+  "guest_elf_sha256": "5b3ebfcdbfd8a8c98d6f21c2e9db3cf499c9c0e77d90997637aa4fad9f694ce5",
+  "guest_elf_file": "box_guest.elf",
+  "reproducibility_note": "an identical-source build on another path differs by embedded cargo registry path strings; pin the proved ELF; use --remap-path-prefix for path-independent keys"
+ },
+ "proofs": {
+  "row_096": {
+   "groth16_artifact_sha256": "62f113eca2c59970b54890bc6857ac527ecfde94487b4fba7263c325db32f936",
+   "raw_proof_file": "row_096_groth16_proof.bin",
+   "public_values_sha256": "4a75159f7807e05fce1b908299d54d482a81abd765d6f6cdea5d8811aa72ef69",
+   "oracle": "full_frozen_row96",
+   "trapdoor_flag": 1,
+   "prove_elapsed_ms": 769575,
+   "raw_frame_sha256": "552e9e7ef2d70346665be990bed9c4d0fc82d65a2e561b244e95075e4df3bd30"
+  },
+  "row_072": {
+   "groth16_artifact_sha256": "522a5c7ba8f14ac869d2e9ef2f7e802610fb23e30137adf46a2490d82645aa73",
+   "raw_proof_file": "row_072_groth16_proof.bin",
+   "public_values_sha256": "baf0c6f3d496579f274e3593c93c10834cfa1eb5c2d9137cc93fb78754553bc7",
+   "oracle": "partial_row_72 AT PROVING TIME: 1,073 of 1,085 bytes checked against circuit-independent oracles and 12 bytes (coupling numerator, head saturation) circuit-derived, as row_072_manifest.json records; the 12 bytes were closed AFTER proving, on 2 Sep 2026, by the independent Python re-run of both frozen networks (verifier/frozen_models_python_results.json), which reproduces the proved numerator 56821525 and head saturation 0",
+   "trapdoor_flag": 1,
+   "prove_elapsed_ms": 850972,
+   "raw_frame_sha256": "f821251979d7214d92f5810de0c03083c4fb09db3984e7532d7c1d0fce92b4af"
+  }
+ },
+ "statement_abi": {
+  "total_bytes": 1085,
+  "blocks": {
+   "membership_prefix": "0..352 (ZBROWM02)",
+   "coupling": "352..696",
+   "pose": "696..832 (ZBJPOSE1)",
+   "beacon": "832..876 (ZBJBEAC1)",
+   "zcash_inclusion": "876..948 (ZBZCINC3)",
+   "august_anchor": "948..1085 (ZBAUGST2)"
+  }
+ },
+ "session": {
+  "session_id": "ZEEBEAM_MAINNET_BLOCKING_TRAINING_300S_20260822_001",
+  "row_count": 712,
+  "tree_depth": 10,
+  "s_0": "74e3a131e1aaadd98e18c5f2a5f28ffaf59b8cd738e10216586efa2a893f384c",
+  "s_n": "aeea9f4d6a55ebecd900eae187ea70dce05696551f96ae976c9a5243b3a4398e",
+  "authority_manifest_sha256": "740d752d27b70cb63c9501a470562a52616f4a445a7a9c0fb300844f61c7d783",
+  "chain_log_blake3": "754e5716e65a065e5ad3146131609a1fd12e8310d966fb6bf2d3de6c568e7f8b",
+  "context_digest_blake3": "f5eba65f4a3604bee08207b4af571b97813cbd4dd3f919c110f6c5125ab21ee0",
+  "ordered_session_root_blake3": "38a484b8793f3afadaf8fc5ba1c04d47e08cdbb4c07a39da09fb4149499a6572"
+ },
+ "beacon": {
+  "network": "drand quicknet (mainnet)",
+  "scheme": "bls-unchained-g1-rfc9380",
+  "dst": "BLS_SIG_BLS12381G1_XMD:SHA-256_SSWU_RO_NUL_",
+  "chain_hash": "52db9ba70e0cc0f6eaf7803dd07447a1f5477735fd3f661792ba94600c84e971",
+  "public_key_g2_hex": "83cf0f2896adee7eb8b5f01fcad3912212c437e0073e911fb90022d3e760183c8c4b450b6a0a6c3ac6a5776a2d1064510d1fec758c921cc22b0e17e63aaf4bcb5ed66304de9cf809bd274ca73bab4af5a6e9c76a4bc09e76eae8991ef5ece45a",
+  "row_96_round": 31521620,
+  "row_72_round": 31521616
+ },
+ "models_and_specs": {
+  "preprocess_v1_spec_sha256": "6345dc412201aacd2e33626159812e6a8bf839142b403e15f4de1c781982bd6d",
+  "uncropped_spec_sha256": "a3985f693e1c017037fda13e7b6d15f8896c4d195e02a6298f198552560e8e08",
+  "trained_r32_ptq_v2_blob_sha256_file": "0188b5c0f4ea08e81940aef1a8cb303c00b24e7f8b7730a64bf5080d4030353a",
+  "uncr64_pose_blob_sha256_file": "c95b00724f801e9ea8b841c060ac23d2b4267c77691c1755cc6a111550197ed7",
+  "coupling_block_digests_from_statement": {
+   "blob_sha256": "0188b5c0f4ea08e81940aef1a8cb303c00b24e7f8b7730a64bf5080d4030353a",
+   "blob_manifest_sha256": "0a2cbe6992e1f1f0911b7ab6e09184bc96408dda0684657ec6c0a21125305290",
+   "model_spec_sha256": "907879d2edc5b902dd79c57a491bb315f9003e6409602e5fa8c6f634e4e53fe2",
+   "checkpoint_sha256": "95e669745a3809391f4db9da75adf54d2a597421b4a66fba0217f918ffa706f7",
+   "final_model_state_sha256": "f754be088b7253ce6d2e48de9fc429167e27df28ba05ec514e86a19578110d84",
+   "ptq_source_state_sha256": "b00a31cd7c3d4eb36d2f3e57ec9605b0b3605264df91ad498378a1f8b6d8828e",
+   "integer_artifact_sha256": "6036631cd27dab369d4494c5f225c13bbdd9f640a9068dde399f98e4a854cfcf",
+   "parity_report_sha256": "784bd57327fbec4a1ea509025b795c63ca8789bb6d6899fe6a42b831d9cdc347"
+  }
+ },
+ "dependencies": {
+  "bls12_381_fork": "https://github.com/sp1-patches/bls12_381 tag patch-0.8.0-sp1-6.2.0",
+  "sha2_patch": "sp1-patches/RustCrypto-hashes tag patch-sha2-0.10.9-sp1-4.0.0",
+  "jubjub_vendored_lib_rs_sha256": "aeac90c5ea8e51184a60b982d6f9a10fa56fe9595a683dd0b0f7a5c500b1edd6",
+  "orchard": "0.15.3 (default-features off)",
+  "zcash_note_encryption": "0.4.2",
+  "program_cargo_lock_sha256": "1e664af94ac18bcc82eaecf245ae81b403ebb19cdb848daf7aa7ec352c7d51bf",
+  "script_cargo_lock_sha256": "053b708c638b786c115476d226247e05d85bd347970853205666bfff42dd0944"
+ },
+ "anchor": {
+  "network": "Zcash mainnet",
+  "txid": "8d1672155e98000498070bd76479e0363b8b9ee0b61f0d32a802d35ef5a4f206",
+  "height": 3456294,
+  "block_hash": "000000000052f2b0c7e7929e16086c3d15f09922b050109ec722c8576ffddf0b",
+  "action_index": 0,
+  "branch_format": "33 bytes per level: sibling(32) || leaf_is_right(1)",
+  "tx_version": "0x80000006",
+  "version_group": "0xd884b698",
+  "branch_id": "0x37a5165b",
+  "anchor_tx_hex_file_sha256": "ebb1df2eaf7cae8a7bdf1b4e246682659f7618d3d45ec0241edbb688b38aaa9d"
+ },
+ "receipt_and_prefix": {
+  "receipt_bytes": 853,
+  "receipt_sha256": "fae21624c3b88a023722e726b53ab1fb634e104234d0581709f2c7d757d8b30b",
+  "prefix_json_bytes": 603,
+  "prefix_json_sha256": "d67ac2aeabed854c473b2c1815d89177eb6ab668e33d691ba8e0237428b2f3f4",
+  "chain_log_prefix_rows": 260,
+  "chain_log_prefix_bytes": 134188,
+  "chain_log_prefix_blake3": "182a1bf713f15b9fdc0290daaa0f3099daa32de1516da4e1c09c38d0a9f1458b",
+  "content_root_sha256": "7ce89c0f56d4489c13a3750a6e917e61f7c519d3d7da503b6888c1c746c24c0d",
+  "record_scope": "sha256:5b5e3d2f37f11622fcaba331b1c030a3dc3c27b18853dd89bd15cad3be066eb6",
+  "network": "zcash-testnet",
+  "profile": "ZKMAX_PROFILE_R_ZCASH_TERMINAL_V1",
+  "canonical_json_rule": "JSON.stringify with recursively sorted keys, no whitespace"
+ },
+ "chameleon": {
+  "curve": "BabyJubJub twisted Edwards over BN254 Fr",
+  "a": 168700,
+  "d": 168696,
+  "subgroup_order_L": "2736030358979909402780800718157159386076813972158567259200215660948447373041",
+  "base8_x": "5299619240641551281634865583518297030282874472190772894086521144482721001553",
+  "base8_y": "16950150798460657717958625567821834550301663161624707787222815936182638968203",
+  "Y_x": "1384234100907161067472666917756486530392856473234078150374959735146123865385",
+  "Y_y": "17466721090797778420729352315386693028724174449288619079397665723959923012794",
+  "C_x": "1563975389099808683858415589389684303132091914202773499207171148392973300666",
+  "C_y": "19984223057657441493667196440972307184262910033498043144520945902572969157267",
+  "C_from_statement_matches_receipt": true,
+  "content_scalar_domain": "ZKMAX_PROFILE_R_CONTENT_SCALAR_V1 || 0x00 || canonical statement, SHA-512 mod L",
+  "content_root_domain": "ZKMAX_PROFILE_R_CONTENT_ROOT_V1\\0 || u64be(len) || PREFIX.json"
+ },
+ "verifier_out_of_band_checks": [
+  "block hash at height 3456294 on canonical Zcash mainnet",
+  "drand quicknet round 31521620 (row 96) / 31521616 (row 72) against the public schedule"
+ ]
+}

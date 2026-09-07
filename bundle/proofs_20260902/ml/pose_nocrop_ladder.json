@@ -1,0 +1,73 @@
+{
+ "experiment": "pose discriminator, crop vs no-crop, published trainer",
+ "claim_ceiling": "development diagnostic; cue-aware; single-take confounded; reality_claim False",
+ "arms_described": {
+  "crop": "published PREPROCESS_V1 1024-square at x0=782,y0=340 on packed 2660x2300, half-up mean to 256",
+  "wide": "centred 2048-square, 4x area, half-up mean to 256",
+  "full": "entire packed plane, anisotropic area mean to 256x256"
+ },
+ "chance": 0.09090909090909091,
+ "n_eval": 116,
+ "ladder": {
+  "128": {
+   "initial_state_sha256_matches_published": true,
+   "crop": {
+    "correct": 112,
+    "exact_accuracy": 0.9655172413793104,
+    "seconds": 11.4,
+    "published_correct": 112,
+    "positive_control_reproduces": true
+   },
+   "wide": {
+    "correct": 111,
+    "exact_accuracy": 0.9568965517241379,
+    "seconds": 8.9
+   },
+   "full": {
+    "correct": 98,
+    "exact_accuracy": 0.8448275862068966,
+    "seconds": 9.4
+   }
+  },
+  "64": {
+   "initial_state_sha256_matches_published": true,
+   "crop": {
+    "correct": 114,
+    "exact_accuracy": 0.9827586206896551,
+    "seconds": 4.7,
+    "published_correct": 114,
+    "positive_control_reproduces": true
+   },
+   "wide": {
+    "correct": 110,
+    "exact_accuracy": 0.9482758620689655,
+    "seconds": 4.4
+   },
+   "full": {
+    "correct": 102,
+    "exact_accuracy": 0.8793103448275862,
+    "seconds": 4.4
+   }
+  },
+  "32": {
+   "initial_state_sha256_matches_published": true,
+   "crop": {
+    "correct": 112,
+    "exact_accuracy": 0.9655172413793104,
+    "seconds": 3.2,
+    "published_correct": 112,
+    "positive_control_reproduces": true
+   },
+   "wide": {
+    "correct": 64,
+    "exact_accuracy": 0.5517241379310345,
+    "seconds": 2.7
+   },
+   "full": {
+    "correct": 53,
+    "exact_accuracy": 0.45689655172413796,
+    "seconds": 3.1
+   }
+  }
+ }
+}

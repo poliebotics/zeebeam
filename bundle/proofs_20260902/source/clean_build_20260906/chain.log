@@ -1,0 +1,19 @@
+start 2026-09-06T00:41:09Z
+driver_sha256=738726a3050ab17d9bb13d2a17069f1a0107bc7f37962de85ed8dc57684697c9
+warning: patch `bls12_381 v0.8.0 (https://github.com/sp1-patches/bls12_381?tag=patch-0.8.0-sp1-6.2.0#9e4e2ae4)` was not used in the crate graph
+warning: patch `jubjub v0.10.0 (/home/c/Documents/BOSUN/scratch/joined_build_20260901/vendor/jubjub-0.10.0)` was not used in the crate graph
+help: Check that the patched package version and available features are compatible
+      with the dependency requirements. If the patch has a different version from
+      what is locked in the Cargo.lock file, run `cargo update` to use the new
+      version. This may also occur with an optional dependency that is not enabled.
+warning: zeebeam-chain-script@0.1.0: rustc +succinct --version: "rustc 1.94.0-dev\n"
+warning: zeebeam-chain-script@0.1.0: zeebeam-chain-program built at 2026-09-06 01:41:35
+    Finished `release` profile [optimized] target(s) in 1m 22s
+warning: the following packages contain code that will be rejected by a future version of Rust: proc-macro-error2 v2.0.1
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+elf=../program/target/elf-compilation/riscv64im-succinct-zkvm-elf/release/zeebeam-chain-program
+guest_elf_bytes=460416 guest_elf_sha256=4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926
+home_paths_in_elf=0
+sp1_vkey=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+BUILD_REPRODUCED_OK sha256=4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926 vkey=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+exit=0 2026-09-06T00:42:46Z

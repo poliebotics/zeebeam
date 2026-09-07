@@ -1,0 +1,20 @@
+20:43:43 STAGE wait_ssh [public address redacted]
+20:43:49 STAGE bootstrap
+20:44:01 STAGE transfer
+20:44:43 STAGE build_cuda (rows host)
+20:47:46 ELF_REPRODUCED_ON_BOX
+20:47:46 STAGE build_cuda (chain host)
+20:50:09 STAGE prove_chain
+guest_elf_bytes=460416 guest_elf_sha256=4934b9e260d6250dcb119f4eaa9f46a3ff4eb144c02340175b356ef17ade3926
+sp1_vkey=0x005402a848fdc787e32c0a110ca2662dd61c580481b4e418d5400a52fbd7df50
+oracle=chain_python checked=279 of 279 circuit_derived=0
+prove_elapsed_ms=477730
+proof_bytes=1973 proof_sha256=3207efa92cf900dd0faf58e7c5dbec12066936055ebb6bc320a6dfa889263679
+verified_proof=true
+20:58:37 STAGE prove_rows (33 rows)
+rows done: 10
+23:12:50 STAGE pull
+23:12:50 WARNING: pull incomplete
+23:12:50 STAGE shred_and_terminate
+error: HTTP 0: transport: [Errno -3] Temporary failure in name resolution
+23:12:51 FLEET_box0_DONE

@@ -1,0 +1,35 @@
+=== box ELF/vkey as recorded in the manifests ===
+row 96 vkey 0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 elf 8bcadf5373742e92 prove_ms 857424 oracle full_frozen_row96 checked 1101 circuit_derived 0
+row 72 vkey 0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490 elf 8bcadf5373742e92 prove_ms 749813 oracle independent_row_72 checked 1101 circuit_derived 0
+8bcadf5373742e92eb36535680e4b9f092c00fdcf9a8f7171678c49b170f11db
+=== cold verify on halo (SP1 SDK, --elf = reproducible final ELF) ===
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+oracle=full_frozen_row96 checked=1101 circuit_derived=0
+verified_proof=true
+sp1_vkey=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+oracle=independent_row_72 checked=1101 circuit_derived=0
+verified_proof=true
+=== export raw proofs + public values ===
+raw_proof_bytes=356 raw_proof_sha256=b441ede1e037fa653845215e8bb4c30d8bcc2cef6a8b0e82bcf95317655bfda9
+public_values_bytes=1101 public_values_sha256=777bbf1f5b6197bd82fa9c9c041413efa5c647de7c7a627aa92b3d328adcb26a
+raw_proof_bytes=356 raw_proof_sha256=b52dd2abd1d553b4c72e8cbbc4f65742bcabc1726180b9b8e2c75113354b888d
+public_values_bytes=1101 public_values_sha256=9b560f900965b110cb7d1e67d142e8bc8f8bca8143134659a34d540a116a5190
+356 /home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/row_072_groth16_proof.bin
+1101 /home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/row_072_groth16_public_values.bin
+356 /home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/row_096_groth16_proof.bin
+1101 /home/c/Documents/BOSUN/scratch/joined_build_20260901/proofs_20260902_v2/row_096_groth16_public_values.bin
+=== standalone sp1-verifier ===
+proof_bytes=356 proof_sha256=b441ede1e037fa653845215e8bb4c30d8bcc2cef6a8b0e82bcf95317655bfda9
+public_values_bytes=1101 public_values_sha256=777bbf1f5b6197bd82fa9c9c041413efa5c647de7c7a627aa92b3d328adcb26a
+sp1_vkey_hash=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+tamper_public_byte_87_rejected=true
+proof_bytes=356 proof_sha256=b52dd2abd1d553b4c72e8cbbc4f65742bcabc1726180b9b8e2c75113354b888d
+public_values_bytes=1101 public_values_sha256=9b560f900965b110cb7d1e67d142e8bc8f8bca8143134659a34d540a116a5190
+sp1_vkey_hash=0x0019d16cfe911d943315c04235c792fcccc3e0759aa3095a941b8508178e0490
+tamper_public_byte_87_rejected=true
+=== statements: proved == executed? ===
+096 1101 sha 777bbf1f5b6197bd equals_executed True
+   rounds 31521620 31521620 flag 1 verdict 2 num 56835791
+072 1101 sha 9b560f900965b110 equals_executed True
+   rounds 31521616 31521616 flag 1 verdict 0 num 56821525
+POST_CEREMONY2_END
