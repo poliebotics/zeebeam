@@ -1,16 +1,16 @@
 ---
-version: 1.16
-date: 2026-09-06
+version: 1.17
+date: 2026-09-09
 status: companion-seventh-closing-pass-applied
-author: BOSUN (drafting); Cathal Ryan Hynes (principal)
-companion_to: ZeeBeam manuscript v3.20 (paper/zeebeam.md)
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
+companion_to: ZeeBeam manuscript v3.21 (paper/zeebeam.md)
 ---
 
 # ZeeBeam, by Example
 
 ## From a toy proof to the ZeeBeam relations, one step at a time
 
-This is the worked-examples companion to the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.20). ZeeBeam names the capture-and-proof
+This is the worked-examples companion to the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.21). ZeeBeam names the capture-and-proof
 system, and a ZeeBeam recording is a session with rows proved under it; the work belongs to Dark Lantern, the wider
 privacy and zero-knowledge research programme.
 The manuscript
@@ -502,6 +502,7 @@ rebuilt ELF's size, SHA-256 and key equal the pins.
 
 ## Log
 
+- 1.17 (2026-09-09, BOSUN): authorship line, 9 September 2026; manuscript v3.21 (the companion_to line and the introduction follow); HTML and PDF re-rendered; no other change.
 - 1.16 (2026-09-07, BOSUN): manuscript v3.20 (*ZeeBeam: The Zero-Knowledge Beam*); the companion_to line and the introduction follow; no other change.
 - 1.15 (2026-09-06, BOSUN): manuscript v3.16; PDF re-rendered with the long-token fix; the 1.13 entry's manuscript label restored to v3.14 (history). No other change.
 - 1.14 (2026-09-06, BOSUN): manuscript v3.15 (referee trail published again); no other change.

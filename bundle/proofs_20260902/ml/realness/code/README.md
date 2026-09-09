@@ -1,8 +1,8 @@
 ---
-version: 1.0
-date: 2026-08-30
+version: 1.1
+date: 2026-09-09
 status: drafted-cpu-validated
-author: BOSUN (remote, box [public address redacted])
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant (remote, box [public address redacted])
 ---
 
 # ZeeBeam realness study — machinery
@@ -113,5 +113,6 @@ CUDA_VISIBLE_DEVICES="" PYTHONDONTWRITEBYTECODE=1 python3 run_fixture.py --out-d
 ```
 
 ## Log
+- 1.1, 2026-09-09, BOSUN. authorship line, 9 September 2026.
 - 1.0, 2026-08-30, BOSUN. Built and CPU-validated on box [public address redacted]. Classes 1,2
   deliberately not built (no generator). Full-scale GPU scoring deferred to RUNBOOK.md.

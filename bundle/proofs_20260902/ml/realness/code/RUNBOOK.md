@@ -1,8 +1,8 @@
 ---
-version: 1.0
-date: 2026-08-30
+version: 1.1
+date: 2026-09-09
 status: ready-for-gpu
-author: BOSUN (remote)
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant (remote)
 ---
 
 # RUNBOOK — full-scale ZeeBeam realness scoring
@@ -135,4 +135,5 @@ present classes are SECURITY DIAGNOSTICS. Report per the labels the JSON already
 the boundaries in `LIMITATIONS.md`.
 
 ## Log
+- 1.1, 2026-09-09, BOSUN. authorship line, 9 September 2026.
 - 1.0, 2026-08-30, BOSUN. Commands fixed against the CPU-validated pipeline.

@@ -1,8 +1,8 @@
 ---
-version: 1.6
-date: 2026-09-05
+version: 1.7
+date: 2026-09-09
 status: locked-environment-description
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Locked environment for the ZeeBeam proof bundle
@@ -80,6 +80,8 @@ The exact `sp1-gpu-server` build fetched on the box (the SDK downloads it at fir
 recorded as gaps rather than filled in from memory.
 
 ## Log
+
+- 1.7 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 
 - 1.6 (2026-09-05, BOSUN) — title and fleet-record wording after Sol's closing pass.
 

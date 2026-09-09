@@ -51,7 +51,7 @@ full list.
 
 | path | what |
 |------|------|
-| `paper/` | the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.20: the v3.16 text after nineteen referee passes, with the title given its paper form and Section 8.1 recording the one look at the verification session): Markdown, HTML, PDF |
+| `paper/` | the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.21: the v3.16 text after nineteen referee passes, with the title given its paper form and Section 8.1 recording the one look at the verification session): Markdown, HTML, PDF |
 | `companions/` | `zeebeam_worked_examples` (a graded walk from a hash preimage to the proofs in the paper, with runnable checks) and `zeebeam_for_dummies` (the same claims and caveats without formulas) |
 | `figures/` | the boundary diagram and cost strip for one proved row, and the script that draws them |
 | `bundle/proofs_20260902/` | the artifact: 259 row proofs under the final key, two previous-revision row proofs and the chain proof, statements, pins, decoded statements, prover manifests and logs, the frozen source tree carrying every path-dependency crate's bytes with a staging script for the layout its manifests expect and fail-closed reproducible-build drivers, the standalone verifier, the Python oracles, the 260-row anchored prefix and receipt, and `SHA256SUMS` over its files. Start with `VERIFY.md` |
@@ -89,10 +89,11 @@ the exact costs, timings and one network incident are disclosed in the manuscrip
 All material in this repository is authored by Cathal Ryan Hynes (PolieBotics), who directed, reviewed and released it. BOSUN, an
 automated research assistant he operates, drafted the text, built the artefacts and prepared the commits, which therefore carry
 BOSUN's identity as the operator up to this commit; from this commit onward, commits are authored as Cathal Ryan Hynes with BOSUN
-as committer. `RELEASE_NOTES.md` and `THIRD_PARTY_NOTICES.md` carry the author-of-record line, `author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant`. Fourteen documents keep the author line they were released with, because their bytes are fixed inside
-pinned artefacts and are read under this section: the manuscript `paper/zeebeam.md` and the companions `companions/zeebeam_for_dummies.md`
-and `companions/zeebeam_worked_examples.md`, whose HTML and PDF renderings derive from them, and the eleven documents of the proof bundle
-that `bundle/proofs_20260902/SHA256SUMS` lists: `ENVIRONMENT.md`, `VERIFY.md`, `source/README.md`, `source/rust/row_binding_join_membership_sp1_candidate/README.md`, `final_relation/GPU_MEMORY_OBSERVATIONS.md`, `final_relation/boundary_row_095/README.md`, `ml/realness/README.md`, `ml/realness/zeebeam_realness_results_20260901.md`, `ml/realness/code/README.md`, `ml/realness/code/RUNBOOK.md`, `ml/realness/code/LIMITATIONS.md`.
+as committer. Every document in this tree carries the author-of-record line, `author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant`, in its front matter: `RELEASE_NOTES.md` and
+`THIRD_PARTY_NOTICES.md` took it on 9 September 2026 with `AUTHORS.md`, and later the same day the manuscript `paper/zeebeam.md` (3.21), the companions
+`companions/zeebeam_for_dummies.md` (1.19) and `companions/zeebeam_worked_examples.md` (1.17), with their HTML and PDF renderings, and the eleven documents of the proof bundle
+(`ENVIRONMENT.md`, `VERIFY.md`, `source/README.md`, `source/rust/row_binding_join_membership_sp1_candidate/README.md`, `final_relation/GPU_MEMORY_OBSERVATIONS.md`, `final_relation/boundary_row_095/README.md`, `ml/realness/README.md`, `ml/realness/zeebeam_realness_results_20260901.md`, `ml/realness/code/README.md`, `ml/realness/code/RUNBOOK.md`, `ml/realness/code/LIMITATIONS.md`), each with its version, date and Log advanced. The bundle's own `SHA256SUMS` was regenerated over the same paths in the same order for those eleven lines;
+every proof, statement, pin, manifest, log, anchor receipt and source file inside the bundle is byte-identical to the 2 September release. Log entries record BOSUN as the editor of each revision.
 `AUTHORS.md` states the same in two lines; `CITATION.cff` carries the citation metadata.
 
 ## Licence

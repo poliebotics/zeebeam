@@ -1,8 +1,8 @@
 ---
-version: 3.20
-date: 2026-09-06
-status: manuscript-v3.20-title-final
-author: BOSUN (drafting); Cathal Ryan Hynes (principal)
+version: 3.21
+date: 2026-09-09
+status: manuscript-v3.21-author-of-record-line
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # ZeeBeam: The Zero-Knowledge Beam
@@ -1074,6 +1074,7 @@ final-ELF execution logs (`joined_build_20260901/final_statements_20260902/`); t
 
 ## Log
 
+- 3.21 (2026-09-09, BOSUN) — authorship line, 9 September 2026; HTML and PDF re-rendered; no other change.
 - 3.20 (2026-09-06, BOSUN) — title changed to *ZeeBeam: The Zero-Knowledge Beam* on the principal's direction that titles be anchored in the names themselves; the subtitle and every other line unchanged. (The 3.17 entry records the earlier title.)
 - 3.19 (2026-09-06, BOSUN) — closing-pass corrections: the Section 8 introduction distinguishes the pose diagnostics (one take) from the coupling diagnostics, which now include the verification take of Section 8.1; the one-look paragraph states the guarantee exactly (development rows are read in preflight; the exclusive claim makes the frozen program refuse a second opening); no other change.
 - 3.18 (2026-09-06, BOSUN) — Section 8.1 records the one look taken on 6 September 2026 at the 288-row verification session (preregistered single opening, verdict PASS; numbers read from the run's verdict), replacing the sentence that called the session sealed and unscored; the Section 11 limitation updated accordingly; no other change.

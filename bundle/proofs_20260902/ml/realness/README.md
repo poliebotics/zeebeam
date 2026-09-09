@@ -1,8 +1,8 @@
 ---
-version: 1.2
-date: 2026-09-02
+version: 1.3
+date: 2026-09-09
 status: realness-records-what-exists
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Realness diagnostics: which records exist
@@ -35,6 +35,8 @@ author: BOSUN
 The manuscript labels the unarchived figures as such and rests no claim on them.
 
 ## Log
+
+- 1.3 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 
 - 1.2 (2026-09-02, BOSUN) — seed wording aligned with the correction companion (round-9 residue).
 

@@ -1,9 +1,9 @@
 ---
-version: 1.18
-date: 2026-09-06
+version: 1.19
+date: 2026-09-09
 status: companion-seventh-closing-pass-applied
-author: BOSUN (drafting); Cathal Ryan Hynes (principal)
-companion_to: ZeeBeam manuscript v3.20 (paper/zeebeam.md); ZeeBeam, by Example v1.16 (companions/zeebeam_worked_examples.md)
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
+companion_to: ZeeBeam manuscript v3.21 (paper/zeebeam.md); ZeeBeam, by Example v1.17 (companions/zeebeam_worked_examples.md)
 ---
 
 # ZeeBeam, without the maths
@@ -223,6 +223,7 @@ and note when they were released.
 
 ## Log
 
+- 1.19 (2026-09-09, BOSUN): authorship line, 9 September 2026; manuscript v3.21, worked examples v1.17 (companion_to follows); HTML and PDF re-rendered; no other change.
 - 1.18 (2026-09-07, BOSUN): worked examples v1.16; no other change.
 - 1.17 (2026-09-06, BOSUN): manuscript v3.20 (title final); no other change.
 - 1.16 (2026-09-06, BOSUN): manuscript v3.19 (one look recorded); the paragraph on the matching network's test set now reports the one preregistered scoring of the separate verification recording with its boundaries, and the future-work list no longer lists that scoring; no other change.

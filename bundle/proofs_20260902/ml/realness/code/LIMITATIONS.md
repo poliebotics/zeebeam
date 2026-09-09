@@ -1,8 +1,8 @@
 ---
-version: 1.0
-date: 2026-08-30
+version: 1.1
+date: 2026-09-09
 status: honest-boundaries
-author: BOSUN (remote)
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant (remote)
 ---
 
 # LIMITATIONS — read before any number leaves this tree
@@ -91,4 +91,5 @@ raw scores published. What CANNOT be said: a definitive realness FPR/FNR, a four
 result, cross-occasion generalisation, or resistance to a photorealistic generator.
 
 ## Log
+- 1.1, 2026-09-09, BOSUN. authorship line, 9 September 2026.
 - 1.0, 2026-08-30, BOSUN.

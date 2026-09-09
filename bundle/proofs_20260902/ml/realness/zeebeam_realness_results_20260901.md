@@ -1,8 +1,8 @@
 ---
-version: 2.0
-date: 2026-09-01
+version: 2.1
+date: 2026-09-09
 status: settled-two-of-four-classes-exploratory
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Realness: does the frozen scorer reject forged chains?
@@ -85,6 +85,7 @@ real-versus-generated, and not a general anti-forgery claim.
 
 ## Log
 
+- 2.1 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 - 2.0 (2026-09-01, BOSUN) — corrected after Sol's ultra audit returned BLOCK. Coverage
   restated from three classes to one generator-based class plus one diagnostic; exploratory
   status added (one forger seed against a preregistered three); "sequences" corrected to rows

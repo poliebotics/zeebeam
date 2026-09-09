@@ -1,8 +1,8 @@
 ---
-version: 0.5
-updated: 2026-08-25
+version: 0.6
+updated: 2026-09-09
 status: active
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # ZeeBeam row-binding ordered-membership SP1 candidate
@@ -50,6 +50,7 @@ cargo test --locked --offline --features groth16 --bin zeebeam-row-binding-membe
 
 | Version | Date | Author | Change |
 |---|---|---|---|
+| 0.6 | 2026-09-09 | BOSUN | authorship line, 9 September 2026. |
 | 0.5 | 2026-08-25 | BOSUN | Added fail-closed Groth16 proof-byte and wrong-verifying-key negative checks without claiming their execution. |
 | 0.4 | 2026-08-25 | BOSUN | Added the separate feature-gated direct-Groth16 host while preserving the exact Core host. |
 | 0.3 | 2026-08-25 | BOSUN | Registered the separate exact-input SP1 Core prove-and-verify host while retaining the no-proof claim. |

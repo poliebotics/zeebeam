@@ -44,6 +44,6 @@ preferred-citation:
       given-names: Cathal Ryan
       affiliation: PolieBotics
   year: 2026
-  version: "3.20"
+  version: "3.21"
   url: "https://github.com/poliebotics/zeebeam/blob/main/paper/zeebeam.md"
   notes: "Manuscript in paper/ of the ZeeBeam repository release 1.0.0; drafted with BOSUN, the project's automated research assistant."

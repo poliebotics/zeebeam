@@ -1,8 +1,8 @@
 ---
-version: 1.5
-date: 2026-09-06
+version: 1.6
+date: 2026-09-09
 status: frozen-source-as-proved
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Frozen source of the proved relation
@@ -76,6 +76,8 @@ the key (manuscript Section 7.3). The tree here is therefore the proved bytes, d
 manuscript's A5 qualifier. The code is unaffected.
 
 ## Log
+
+- 1.6 (2026-09-09, BOSUN): authorship line, 9 September 2026.
 
 - 1.5 (2026-09-06, BOSUN): added the canonical preprocessing configuration and `SRC_INPUT_SHA256SUMS`, staged the configuration with `stage_for_rebuild.sh`, and recorded clean staged reproduction of both pinned ELFs and keys in `clean_build_20260906/`.
 

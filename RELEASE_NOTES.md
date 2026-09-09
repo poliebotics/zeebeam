@@ -1,5 +1,5 @@
 ---
-version: 1.22
+version: 1.23
 date: 2026-09-09
 status: release-1.0.0
 author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
@@ -20,8 +20,8 @@ file in the tree but itself, the bundle's own `SHA256SUMS` included; check it wi
 
 | path | what | files |
 |------|------|-------|
-| `paper/zeebeam.{md,html,pdf}` | the manuscript *ZeeBeam: The Zero-Knowledge Beam*, version 3.20 (the 3.16 text with the title given its paper form and the one look at the verification session recorded in Section 8.1) | 3 |
-| `companions/zeebeam_worked_examples.*`, `zeebeam_for_dummies.*` | the worked examples and the plain-language companion, versions 1.16 and 1.18 respectively, each as Markdown, HTML and PDF | 6 |
+| `paper/zeebeam.{md,html,pdf}` | the manuscript *ZeeBeam: The Zero-Knowledge Beam*, version 3.21 (the 3.16 text with the title given its paper form and the one look at the verification session recorded in Section 8.1) | 3 |
+| `companions/zeebeam_worked_examples.*`, `zeebeam_for_dummies.*` | the worked examples and the plain-language companion, versions 1.17 and 1.19 respectively, each as Markdown, HTML and PDF | 6 |
 | `figures/zeebeam.{png,svg,py}` | the boundary diagram and cost strip for one proved row, and the script that draws them | 3 |
 | `bundle/proofs_20260902/` | the artifact: 259 row proofs under the final key, two previous-revision row proofs and the whole-session chain proof, statements, pins, decoded statements, prover manifests and logs, the frozen source tree carrying every path-dependency crate's bytes with `stage_for_rebuild.sh` for the layout its manifests expect and fail-closed build drivers, the standalone verifier, the Python oracles, the anchored prefix and receipt; its own `SHA256SUMS` covers 3,069 files (`VERIFY.md` 2.9, `ENVIRONMENT.md` 1.6) | 3,070 |
 | `referee_trail/` | twenty-one reports (eleven manuscript passes, the companions audit, the release audit, the verification pass, seven closing passes) and a README describing the mechanical redaction of runner metadata, provider identifiers and machine paths | 22 |
@@ -79,6 +79,7 @@ has been made.
 
 ## Log
 
+- 1.23 (2026-09-09, BOSUN) — the author-of-record line carried into the manuscript (3.21), the two companions (1.19 and 1.17) and the eleven bundle documents, each with its Log advanced; the three HTML/PDF pairs re-rendered; the bundle ledger regenerated over the same paths (eleven lines) and the root ledger by its rule; the citation's preferred version 3.21; no other change.
 - 1.22 (2026-09-09, BOSUN) — authorship line, 9 September 2026; AUTHORS.md added to the front-matter row.
 - 1.21 (2026-09-07, BOSUN) — the citation file's preferred citation and the worked-examples companion (1.16) now name manuscript 3.20 and its title *ZeeBeam: The Zero-Knowledge Beam*; the plain-language companion (1.18) follows; HTML/PDF re-rendered; no other change.
 - 1.20 (2026-09-07, BOSUN) — the companions row now names the shipped plain-language companion version, 1.17; no other change.

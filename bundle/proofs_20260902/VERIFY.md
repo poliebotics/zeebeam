@@ -1,8 +1,8 @@
 ---
-version: 2.9
-date: 2026-09-05
+version: 2.10
+date: 2026-09-09
 status: public-release-bundle
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # ZeeBeam proof bundle: how to verify it yourself
@@ -174,6 +174,8 @@ Row 96's pose verdict (letter_y) disagrees with its cue annotation (superman); r
 agrees. Both are reported. The pose model is a diagnostic. No hash proves a photon hit a wall.
 
 ## Log
+
+- 2.10 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 
 - 2.9 (2026-09-05, BOSUN) — title (the bundle holds 262 proofs); the staging script's checker now covers every manifest.
 

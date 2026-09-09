@@ -1,8 +1,8 @@
 ---
-version: 1.0
-date: 2026-09-02
+version: 1.1
+date: 2026-09-09
 status: operator-observations-not-prover-logs
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # GPU memory figures quoted in the manuscript
@@ -23,5 +23,6 @@ prover's requirement.
 
 ## Log
 
+- 1.1 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 - 1.0 (2026-09-02, BOSUN) — written after Sol's round-6 request for the record behind the
   GPU-memory figures.
