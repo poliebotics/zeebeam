@@ -1,8 +1,8 @@
 ---
-version: 1.5
-date: 2026-09-05
+version: 1.6
+date: 2026-09-09
 status: third-party-notices
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Third-party notices
@@ -201,6 +201,7 @@ vendored copies' `Cargo.toml` files on 5 September 2026.
 
 ## Log
 
+- 1.6 (2026-09-09, BOSUN) — authorship line, 9 September 2026.
 - 1.5 (2026-09-05, BOSUN) — after Sol's fourth closing pass: the Rust library notice's provenance settled by running the toolchain source commit's own generate-copyright tool, whose library output is byte-identical to the shipped 1.94.0 release file.
 - 1.4 (2026-09-05, BOSUN) — after Sol's third closing pass: the Rust library notice replaced by the byte-exact generated notice of the 1.94.0 release (same lockfile, COPYRIGHT and compiler-builtins licence as the toolchain's source commit); `compiler-builtins` stated as MIT AND Apache-2.0 WITH LLVM-exception with its complete licence file; the `blake2b_simd` upstream LICENSE with its copyright; the 166 packages described as the lockfile union, target-runtime crates distinguished from build-time ones.
 - 1.3 (2026-09-05, BOSUN) — after Sol's second closing pass: Rust components named exactly (`std` and `panic_abort` included) with the complete library COPYRIGHT notice; MIT notices reproduced per crate; Liberation copyright added to the OFL text; DejaVu Sans Mono Bold and the embedding wording.

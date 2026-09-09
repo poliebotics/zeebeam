@@ -1,8 +1,8 @@
 ---
-version: 1.21
-date: 2026-09-06
+version: 1.22
+date: 2026-09-09
 status: release-1.0.0
-author: BOSUN
+author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant
 ---
 
 # Release notes
@@ -25,7 +25,7 @@ file in the tree but itself, the bundle's own `SHA256SUMS` included; check it wi
 | `figures/zeebeam.{png,svg,py}` | the boundary diagram and cost strip for one proved row, and the script that draws them | 3 |
 | `bundle/proofs_20260902/` | the artifact: 259 row proofs under the final key, two previous-revision row proofs and the whole-session chain proof, statements, pins, decoded statements, prover manifests and logs, the frozen source tree carrying every path-dependency crate's bytes with `stage_for_rebuild.sh` for the layout its manifests expect and fail-closed build drivers, the standalone verifier, the Python oracles, the anchored prefix and receipt; its own `SHA256SUMS` covers 3,069 files (`VERIFY.md` 2.9, `ENVIRONMENT.md` 1.6) | 3,070 |
 | `referee_trail/` | twenty-one reports (eleven manuscript passes, the companions audit, the release audit, the verification pass, seven closing passes) and a README describing the mechanical redaction of runner metadata, provider identifiers and machine paths | 22 |
-| `README.md`, `LICENSE`, `THIRD_PARTY_NOTICES.md`, `licenses/` (9 texts and notices), `CITATION.cff`, `RELEASE_NOTES.md` | front matter and licence texts | 14 |
+| `README.md`, `AUTHORS.md`, `LICENSE`, `THIRD_PARTY_NOTICES.md`, `licenses/` (9 texts and notices), `CITATION.cff`, `RELEASE_NOTES.md` | front matter, authorship and licence texts | 15 |
 | `SHA256SUMS` | the root ledger | 1 |
 
 Start with `README.md`, then `bundle/proofs_20260902/VERIFY.md`.
@@ -79,6 +79,7 @@ has been made.
 
 ## Log
 
+- 1.22 (2026-09-09, BOSUN) — authorship line, 9 September 2026; AUTHORS.md added to the front-matter row.
 - 1.21 (2026-09-07, BOSUN) — the citation file's preferred citation and the worked-examples companion (1.16) now name manuscript 3.20 and its title *ZeeBeam: The Zero-Knowledge Beam*; the plain-language companion (1.18) follows; HTML/PDF re-rendered; no other change.
 - 1.20 (2026-09-07, BOSUN) — the companions row now names the shipped plain-language companion version, 1.17; no other change.
 - 1.19 (2026-09-06, BOSUN) — manuscript 3.20: title *ZeeBeam: The Zero-Knowledge Beam*; plain-language companion 1.17 (companion_to follows); HTML/PDF re-rendered; no other change.

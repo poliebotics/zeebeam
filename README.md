@@ -56,7 +56,7 @@ full list.
 | `figures/` | the boundary diagram and cost strip for one proved row, and the script that draws them |
 | `bundle/proofs_20260902/` | the artifact: 259 row proofs under the final key, two previous-revision row proofs and the chain proof, statements, pins, decoded statements, prover manifests and logs, the frozen source tree carrying every path-dependency crate's bytes with a staging script for the layout its manifests expect and fail-closed reproducible-build drivers, the standalone verifier, the Python oracles, the 260-row anchored prefix and receipt, and `SHA256SUMS` over its files. Start with `VERIFY.md` |
 | `LICENSE`, `THIRD_PARTY_NOTICES.md`, `licenses/` | non-commercial research, teaching, verification and private study; all other rights reserved; the third-party components, including the code compiled into the guest ELFs, with their licence expressions and the licence texts and notices (Apache-2.0, MIT, BSD, Unicode, OFL, DejaVu, the Rust library copyright notice, the compiler-builtins licence) |
-| `CITATION.cff`, `RELEASE_NOTES.md`, `SHA256SUMS` | citation, release notes, and the digest of every other file in this tree (no `.zenodo.json`: a deposit for a persistent identifier is to be created by hand with the component licences declared separately) |
+| `AUTHORS.md`, `CITATION.cff`, `RELEASE_NOTES.md`, `SHA256SUMS` | authorship, citation, release notes, and the digest of every other file in this tree (no `.zenodo.json`: a deposit for a persistent identifier is to be created by hand with the component licences declared separately) |
 | `referee_trail/` | twenty-one reports by a second model (GPT-5.6 through `codex exec`): eleven manuscript referee passes, the companions audit, the release audit, a verification pass on the applied text and seven closing passes, mechanically redacted for runner metadata, provider identifiers and machine paths with substantive findings unchanged (`referee_trail/README.md`). The manuscript states that this is not independent validation |
 
 ## Verify it
@@ -83,6 +83,17 @@ Principal: Cathal Ryan Hynes (PolieBotics). Drafted, built, proved and verified 
 project's automated research assistant, whose development-machine paths appear in the build records.
 The proving ran on rented Lambda A100 machines on 2 and 3 September 2026 for about USD 140 in total;
 the exact costs, timings and one network incident are disclosed in the manuscript's Section 7.
+
+## Authorship
+
+All material in this repository is authored by Cathal Ryan Hynes (PolieBotics), who directed, reviewed and released it. BOSUN, an
+automated research assistant he operates, drafted the text, built the artefacts and prepared the commits, which therefore carry
+BOSUN's identity as the operator up to this commit; from this commit onward, commits are authored as Cathal Ryan Hynes with BOSUN
+as committer. `RELEASE_NOTES.md` and `THIRD_PARTY_NOTICES.md` carry the author-of-record line, `author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant`. Fourteen documents keep the author line they were released with, because their bytes are fixed inside
+pinned artefacts and are read under this section: the manuscript `paper/zeebeam.md` and the companions `companions/zeebeam_for_dummies.md`
+and `companions/zeebeam_worked_examples.md`, whose HTML and PDF renderings derive from them, and the eleven documents of the proof bundle
+that `bundle/proofs_20260902/SHA256SUMS` lists: `ENVIRONMENT.md`, `VERIFY.md`, `source/README.md`, `source/rust/row_binding_join_membership_sp1_candidate/README.md`, `final_relation/GPU_MEMORY_OBSERVATIONS.md`, `final_relation/boundary_row_095/README.md`, `ml/realness/README.md`, `ml/realness/zeebeam_realness_results_20260901.md`, `ml/realness/code/README.md`, `ml/realness/code/RUNBOOK.md`, `ml/realness/code/LIMITATIONS.md`.
+`AUTHORS.md` states the same in two lines; `CITATION.cff` carries the citation metadata.
 
 ## Licence
 
