@@ -1,6 +1,6 @@
 # ZeeBeam: The Zero-Knowledge Beam
 
-ZeeBeam is the projector-camera capture-and-proof system: the protocol, the rig and the proving pipeline. A ZeeBeam
+ZeeBeam, the Zero-knowledge Evidence Emitter Beam, is the projector-camera capture-and-proof system: the protocol, the rig and the proving pipeline. A ZeeBeam
 recording is a session with rows proved under that system. The projected pattern is a deterministic function of a hash chain that folds in the drand quicknet beacon
 and the camera's previous frame. For each of the 259 anchored rows released here, the recorded computation
 is proved in zero knowledge under one verification key. This repository holds one ZeeBeam recording: 259 rows

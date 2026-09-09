@@ -10,7 +10,7 @@ authors:
 repository-code: "https://github.com/poliebotics/zeebeam"
 license-url: "https://github.com/poliebotics/zeebeam/blob/main/LICENSE"
 abstract: >-
-  ZeeBeam is the projector-camera capture-and-proof system, and a ZeeBeam recording is a session with rows proved
+  ZeeBeam, the Zero-knowledge Evidence Emitter Beam, is the projector-camera capture-and-proof system, and a ZeeBeam recording is a session with rows proved
   under it; the work belongs to Dark Lantern, the wider privacy and zero-knowledge research programme. This
   repository holds one ZeeBeam recording. For each of 259 anchored rows of a 712-row session, one SP1 zkVM program wrapped in
   Groth16 proves that the drand quicknet signatures of the row's round and the preceding round verify, that the
