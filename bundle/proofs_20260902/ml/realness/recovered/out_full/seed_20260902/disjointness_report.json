@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "bank": 600,
+    "calib": 600,
+    "test": 500
+  },
+  "overlaps": {
+    "bank&test": [],
+    "calib&test": [],
+    "bank&calib": []
+  },
+  "ok": true,
+  "whole_subsequence_unit": true
+}

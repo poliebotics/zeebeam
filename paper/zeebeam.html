@@ -3,7 +3,7 @@ h1{font-size:1.8em;margin-bottom:0.2em}h2{font-size:1.3em;margin-top:1.6em}h3{fo
 code,pre{font-family:'DejaVu Sans Mono',monospace;font-size:0.84em;background:#f4f4f2}pre{padding:0.7em;overflow-x:auto;white-space:pre-wrap;word-break:break-all}
 table{border-collapse:collapse;font-size:0.86em}td,th{border:1px solid #bbb;padding:0.3em 0.5em;vertical-align:top}th{background:#eee}
 img{max-width:100%}p,li{overflow-wrap:anywhere}h2,h3,h4{break-after:avoid}tr{break-inside:avoid}table{break-before:avoid}p:has(+ table){break-after:avoid}
-.front{color:#555;font-size:0.85em;border-bottom:1px solid #ccc;margin-bottom:1.5em;padding-bottom:0.5em}hr{border:0;border-top:1px solid #ccc;margin:2em 0}</style></head><body><div class="front">version: 3.21<br>date: 2026-09-09<br>status: manuscript-v3.21-author-of-record-line<br>author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant</div><h1>ZeeBeam: The Zero-Knowledge Beam</h1>
+.front{color:#555;font-size:0.85em;border-bottom:1px solid #ccc;margin-bottom:1.5em;padding-bottom:0.5em}hr{border:0;border-top:1px solid #ccc;margin:2em 0}</style></head><body><div class="front">version: 3.22<br>date: 2026-09-23<br>status: manuscript-v3.22-realness-records-recovered<br>author: Cathal Ryan Hynes (author of record); drafted with BOSUN, the project's automated research assistant</div><h1>ZeeBeam: The Zero-Knowledge Beam</h1>
 <p><strong>A zkVM Proof of a Beacon-Seeded Capture-Log Relation with Learned Scores and a Zcash Receipt</strong></p>
 <p><strong>Authors.</strong> Cathal Ryan Hynes (PolieBotics). Drafted with BOSUN, the project's automated research
 assistant (a Claude-family model running the project's desk), whose role is stated in the Acknowledgements.</p>
@@ -935,13 +935,18 @@ reals rejected on six real against six forged test subsequences per evaluation s
 evaluation seeds sharing the same underlying splits, a bootstrap interval [1.0, 1.0] that is
 degenerate rather than informative, because the empirical bootstrap resamples five perfectly separated
 observed clusters per class and so expresses no population uncertainty; one checkpoint run was completed where the predeclared plan asked for three forger seeds; its
-training seed is unrecorded, and the configured seeds 11, 22 and 33 were never trained. The project note records that a generator-free replay-and-splice diagnostic and a black-box ℓ2 probe were also run
-on the rented box; their run records were not preserved when it was terminated, so no figures from them are
-reported here (<code>ml/realness/README.md</code>). The adaptive white-box attack (class 4) is <strong>outstanding</strong> (it
+training seed is unrecorded, and the configured seeds 11, 22 and 33 were never trained. A generator-free replay-and-splice
+diagnostic (class 3: real frames presented at chain positions they do not belong to) ran nine times, three evaluation
+seeds by three attack seeds, on 6 real against 18 attacked subsequences per run; every run had zero attacks passing,
+zero reals rejected and AUROC 1.0. It is a security diagnostic, not a realness ROC, and is not pooled with the
+generated-fakes result. The project note also records a black-box ℓ2 probe on the rented box; its run record was not
+preserved when the box was terminated, so no figure from it is reported here (<code>ml/realness/README.md</code>). The adaptive white-box attack (class 4) is <strong>outstanding</strong> (it
 exhausted a 40 GB GPU twice); no result is claimed for it. The generated-fakes record is archived
 (<code>ml/realness/</code>), with the harness package and a note on the discrepancy between its run metadata and its
-configuration; the exact generating script recorded by the run (<code>fdb8745d…</code>) is not in the bundle, so
-the run cannot be reproduced from the supplied harness. These are diagnostics on a
+configuration. The exact generating script recorded by the run (<code>fdb8745d…</code>) and the class-3 record were recovered
+on 23 September 2026 from the project's backup of the rented box's filesystem and are in <code>ml/realness/recovered/</code>;
+with the scorer checkpoint (<code>d074775e…</code>) published, both runs can be re-executed, and every run's AUROC recomputes
+from the scores in its record (<code>ml/realness/README.md</code>). These are diagnostics on a
 small sample; they are not a security argument [realness results v2.0]. Two recorded defects: the predeclared class 2 (autoregressive
 forgery, each fake conditioned on the previous fake) was never built, so the coverage is one
 generator class plus one generator-free diagnostic; and the produced ROC artifact carries a
@@ -1264,8 +1269,8 @@ script) with its development-machine transcript (the fresh-machine build of the 
 ceremony-2 box's, Section 7.3, made with the day's fail-open driver and recorded in its logs),
 the final-ELF execution logs with every cycle-tracker region (<code>final_relation/execution_logs/</code>), the
 GPU-memory observation record, and the realness records that exist (<code>ml/realness/</code>: the generated-fakes
-ROC record, the harness code and configuration; the replay/splice and ℓ2 run records were not preserved
-and Section 8.1 says so), the 257 fleet proofs of the remaining anchored rows with their manifests, raw
+ROC record, the harness code and configuration, and under <code>recovered/</code> its generating script, the replay/splice
+record and the fake-generation manifests; the ℓ2 run record was not preserved and Section 8.1 says so), the 257 fleet proofs of the remaining anchored rows with their manifests, raw
 proofs, statements, per-box prover logs, the standalone-verification record and <code>PINS_all_rows.json</code>
 (<code>all_rows/proofs/</code>, Section 7.1), the oracle values and per-row membership records of all 712 rows and the executed
 statements of rows 1 to 259 (<code>all_rows/</code>), and the chain relation's proof, records, portable oracle, guest ELF and frozen crate
@@ -1381,6 +1386,7 @@ final-ELF execution logs (<code>joined_build_20260901/final_statements_20260902/
 <code>source/rust/zeebeam_chain_sp1_candidate/</code>).</p>
 <h2>Log</h2>
 <ul>
+<li>3.22 (2026-09-23, BOSUN) — Section 8.1 and the artifact list: the generated-fakes run's generating script and the class-3 replay-and-splice record, previously reported as lost with the rented box, were recovered from the project's backup of its filesystem into <code>ml/realness/recovered/</code>; the class-3 figures are reported (nine runs, zero attacks passing, zero reals rejected, AUROC 1.0, a security diagnostic not pooled with the generated-fakes result); the scorer checkpoint is published; the ℓ2 record remains unpreserved; HTML and PDF re-rendered; no other change.</li>
 <li>3.21 (2026-09-09, BOSUN) — authorship line, 9 September 2026; HTML and PDF re-rendered; no other change.</li>
 <li>3.20 (2026-09-06, BOSUN) — title changed to <em>ZeeBeam: The Zero-Knowledge Beam</em> on the principal's direction that titles be anchored in the names themselves; the subtitle and every other line unchanged. (The 3.17 entry records the earlier title.)</li>
 <li>3.19 (2026-09-06, BOSUN) — closing-pass corrections: the Section 8 introduction distinguishes the pose diagnostics (one take) from the coupling diagnostics, which now include the verification take of Section 8.1; the one-look paragraph states the guarantee exactly (development rows are read in preflight; the exclusive claim makes the frozen program refuse a second opening); no other change.</li>

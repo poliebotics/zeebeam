@@ -51,7 +51,7 @@ full list.
 
 | path | what |
 |------|------|
-| `paper/` | the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.21: the v3.16 text after nineteen referee passes, with the title given its paper form and Section 8.1 recording the one look at the verification session): Markdown, HTML, PDF |
+| `paper/` | the manuscript *ZeeBeam: The Zero-Knowledge Beam* (v3.22: the v3.16 text after nineteen referee passes, with the title given its paper form, Section 8.1 recording the one look at the verification session, and the realness records recovered on 23 September 2026): Markdown, HTML, PDF |
 | `companions/` | `zeebeam_worked_examples` (a graded walk from a hash preimage to the proofs in the paper, with runnable checks) and `zeebeam_for_dummies` (the same claims and caveats without formulas) |
 | `figures/` | the boundary diagram and cost strip for one proved row, and the script that draws them |
 | `bundle/proofs_20260902/` | the artifact: 259 row proofs under the final key, two previous-revision row proofs and the chain proof, statements, pins, decoded statements, prover manifests and logs, the frozen source tree carrying every path-dependency crate's bytes with a staging script for the layout its manifests expect and fail-closed reproducible-build drivers, the standalone verifier, the Python oracles, the 260-row anchored prefix and receipt, and `SHA256SUMS` over its files. Start with `VERIFY.md` |
